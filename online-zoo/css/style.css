@@ -311,6 +311,27 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.woff2") format("woff2"), url("../assets/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.woff2") format("woff2"), url("../assets/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -329,4 +350,80 @@ html, body {
 
 body {
   cursor: url("../assets/cursors/bamboo.cur"), default;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1160px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 83px;
+  height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23.5px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.logo:after {
+  position: absolute;
+  left: 8px;
+  bottom: 5px;
+  width: 12px;
+  height: 22px;
+  content: "";
+  background: url("../../assets/icons/bamboo.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.logo:visited {
+  color: #fff;
+}
+
+.header {
+  height: 80px;
+  background-color: #000;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 63px;
+     -moz-column-gap: 63px;
+          column-gap: 63px;
+}
+.header__logo {
+  margin-top: 1px;
+}
+.header__nav {
+  height: 52px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
