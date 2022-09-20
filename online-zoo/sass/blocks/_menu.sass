@@ -13,21 +13,26 @@
 	&__link
 		display: block
 		height: 100%
-		text-decoration-color: rgba(#E47209, 0.0)
+		text-decoration-color: rgba(#FE9013, 0.0)
 		font-family: 'Roboto', sans-serif
 		font-weight: 500
 		line-height: var(--menu-height)
 		color: #fff
 		transition: all 0.8s
+		position: relative
+		left: -20px
+		width: calc(100% + 40px)
+		text-align: center
 	&__link:hover
-		// text-decoration: underline
 		text-decoration-color: rgba(#E47209, 1.0)
 		transition: all 0.3s
-	// &__item:nth-child(1) a
 	&__item_active a
-		color: #F9804B
 		text-decoration: none
 		cursor: url("../assets/cursors/bamboo.cur"), default
+		background: linear-gradient(to right, #F9804B, #FE9013)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
 
 
 

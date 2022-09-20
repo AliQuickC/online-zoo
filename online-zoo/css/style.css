@@ -371,6 +371,14 @@ body {
   border: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+button, button:active, button:focus {
+  outline: none;
+}
+
 .logo {
   position: relative;
   display: -webkit-box;
@@ -449,14 +457,18 @@ body {
 .menu__link {
   display: block;
   height: 100%;
-  -webkit-text-decoration-color: rgba(228, 114, 9, 0);
-          text-decoration-color: rgba(228, 114, 9, 0);
+  -webkit-text-decoration-color: rgba(254, 144, 19, 0);
+          text-decoration-color: rgba(254, 144, 19, 0);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: var(--menu-height);
   color: #fff;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  position: relative;
+  left: -20px;
+  width: calc(100% + 40px);
+  text-align: center;
 }
 .menu__link:hover {
   -webkit-text-decoration-color: #e47209;
@@ -465,9 +477,12 @@ body {
   transition: all 0.3s;
 }
 .menu__item_active a {
-  color: #F9804B;
   text-decoration: none;
   cursor: url("../assets/cursors/bamboo.cur"), default;
+  background: -webkit-gradient(linear, left top, right top, from(#F9804B), to(#FE9013));
+  background: linear-gradient(to right, #F9804B, #FE9013);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header {
@@ -531,4 +546,60 @@ body {
           text-decoration-color: #e47209;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.watch {
+  background: url("../assets/images/giant-panda-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 12px;
+  padding-bottom: 100px;
+}
+.watch__container {
+  padding-right: 108px;
+}
+.watch__title-wrapper {
+  margin-bottom: 69px;
+  margin-left: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#F9804B), to(#FE9013));
+  background: linear-gradient(to right, #F9804B, #FE9013);
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  position: relative;
+}
+.watch__title {
+  position: absolute;
+  top: 74px;
+  left: 74px;
+  width: 500px;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 106px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+.watch__title span {
+  color: #FFEE2E;
+}
+.watch__online-button {
+  display: block;
+  width: 298px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: -10px;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#F9804B), to(#FE9013));
+  background: linear-gradient(to right, #F9804B, #FE9013);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.watch__online-button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#E47209), to(#E47209));
+  background: linear-gradient(to right, #E47209, #E47209);
+}
