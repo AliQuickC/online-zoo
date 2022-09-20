@@ -360,6 +360,17 @@ body {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  border: 0;
+}
+
 .logo {
   position: relative;
   display: -webkit-box;
@@ -375,14 +386,16 @@ body {
           align-items: center;
   text-align: center;
   text-decoration: none;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 23.5px;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23.5px;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 2px;
   cursor: pointer;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .logo:after {
@@ -392,17 +405,75 @@ body {
   width: 12px;
   height: 22px;
   content: "";
-  background: url("../../assets/icons/bamboo.svg") no-repeat center center;
-  background-size: contain;
+  background-color: #fff;
+  -webkit-mask-image: url("../../assets/icons/bamboo.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .logo:visited {
   color: #fff;
 }
 
+.logo:hover {
+  color: #E47209;
+  border: 2px solid #E47209;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.logo:hover:after {
+  background-color: #E47209;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu {
+  --menu-height: 52px;
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+.menu__item {
+  margin-right: 58px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__link {
+  display: block;
+  height: 100%;
+  -webkit-text-decoration-color: rgba(228, 114, 9, 0);
+          text-decoration-color: rgba(228, 114, 9, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: var(--menu-height);
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.menu__link:hover {
+  -webkit-text-decoration-color: #e47209;
+          text-decoration-color: #e47209;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu__item_active a {
+  color: #F9804B;
+  text-decoration: none;
+  cursor: url("../assets/cursors/bamboo.cur"), default;
+}
+
 .header {
   height: 80px;
   background-color: #000;
+  color: #fff;
 }
 .header__container {
   display: -webkit-box;
@@ -422,8 +493,42 @@ body {
   margin-top: 1px;
 }
 .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 58px;
+     -moz-column-gap: 58px;
+          column-gap: 58px;
   height: 52px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+.header__designed-by {
+  height: 52px;
+  -webkit-text-decoration-color: rgba(228, 114, 9, 0);
+          text-decoration-color: rgba(228, 114, 9, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 52px;
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.header__designed-by:visited {
+  display: block;
+  color: #fff;
+}
+.header__designed-by:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e47209;
+          text-decoration-color: #e47209;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */
