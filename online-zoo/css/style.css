@@ -603,3 +603,58 @@ button, button:active, button:focus {
   background: -webkit-gradient(linear, left top, right top, from(#E47209), to(#E47209));
   background: linear-gradient(to right, #E47209, #E47209);
 }
+
+.backstage {
+  padding-top: 140px;
+  padding-bottom: 90px;
+  background: url("../../assets/images/backstage/flower_bg.png") no-repeat right 12px;
+}
+.backstage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.backstage__picture {
+  max-width: 609px;
+}
+.backstage__text {
+  width: 465px;
+  font-weight: 400;
+  color: #333B41;
+}
+.backstage__text > * {
+  margin: 0;
+}
+.backstage__title {
+  margin-bottom: 22px;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 400;
+}
+.backstage__description {
+  margin-bottom: 54px;
+  font-size: 16px;
+  line-height: 130%;
+}
+.backstage__details-title {
+  margin-bottom: 34px;
+  font-size: 24px;
+}
+.backstage__details-description {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.pets {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.pets__container {
+  text-align: center;
+}
+.pets__animals-slider {
+  margin-bottom: 80px;
+}
