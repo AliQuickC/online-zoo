@@ -394,11 +394,11 @@ button, button:active, button:focus {
           align-items: center;
   text-align: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 19px;
   line-height: 23.5px;
   color: #fff;
+  font-weight: 400;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
   border: 2px solid #fff;
   border-radius: 2px;
   cursor: pointer;
@@ -459,10 +459,11 @@ button, button:active, button:focus {
   height: 100%;
   -webkit-text-decoration-color: rgba(254, 144, 19, 0);
           text-decoration-color: rgba(254, 144, 19, 0);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  line-height: var(--menu-height);
   color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: var(--menu-height);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: relative;
@@ -489,6 +490,9 @@ button, button:active, button:focus {
   height: 80px;
   background-color: #000;
   color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 .header__container {
   display: -webkit-box;
@@ -529,8 +533,6 @@ button, button:active, button:focus {
   height: 52px;
   -webkit-text-decoration-color: rgba(228, 114, 9, 0);
           text-decoration-color: rgba(228, 114, 9, 0);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   line-height: 52px;
   color: #fff;
   -webkit-transition: all 0.8s;

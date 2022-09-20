@@ -1,7 +1,7 @@
 .header
 	height: 80px
 	background-color: #000
-	color: #fff
+	@include header-font(500, 16px)
 
 	&__container
 		display: flex
@@ -23,8 +23,6 @@
 	&__designed-by
 		height: 52px
 		text-decoration-color: rgba(#E47209, 0.0)
-		font-family: 'Roboto', sans-serif
-		font-weight: 500
 		line-height: 52px
 		color: #fff
 		transition: all 0.8s
@@ -35,4 +33,3 @@
 		text-decoration: underline
 		text-decoration-color: rgba(#E47209, 1.0)
 		transition: all 0.3s
-
