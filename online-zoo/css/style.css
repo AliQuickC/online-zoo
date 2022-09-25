@@ -413,8 +413,8 @@ button, button:active, button:focus {
   border: 2px solid #fff;
   border-radius: 2px;
   cursor: pointer;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: color 0.6s, border 0.6s;
+  transition: color 0.6s, border 0.6s;
 }
 
 .logo:after {
@@ -428,8 +428,8 @@ button, button:active, button:focus {
   -webkit-mask-image: url("../../assets/icons/bamboo.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
 
 .logo:visited {
@@ -439,13 +439,13 @@ button, button:active, button:focus {
 .logo:hover {
   color: #E47209;
   border: 2px solid #E47209;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: color 0.3s, border 0.3s;
+  transition: color 0.3s, border 0.3s;
 }
 .logo:hover:after {
   background-color: #E47209;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .menu {
@@ -515,15 +515,32 @@ button, button:active, button:focus {
 .animal-card_meet {
   background: #fff url("../../assets/images/pets/slider/meet-fish_icon.svg") no-repeat 309px 373px;
 }
-.animal-card__image {
-  width: 100%;
+.animal-card__image-container {
+  width: 364px;
+  height: 364px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
-.animal-card__image img {
-  display: block;
+.animal-card__image-container img {
   width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 .animal-card:hover {
   background-color: #F1F3F2;
+}
+.animal-card:hover .animal-card__image-container img {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
 }
 .animal-card:hover .animal-card__description {
   bottom: 10px;
