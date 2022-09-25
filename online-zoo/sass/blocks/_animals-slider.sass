@@ -1,0 +1,58 @@
+.animals-slider
+	width: 1158px
+	position: relative
+	margin-left: auto
+	margin-right: auto
+	&__frame
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		row-gap: 20px
+	&__controls
+		width: 100%
+		height: 0
+		position: absolute
+		top: 50%
+
+	&__prev-button, &__next-button
+		width: 62px
+		height: 62px
+		border-radius: 50%
+		background: linear-gradient(to right, #F9804B, #FE9013)
+		color: #fff
+		cursor: pointer
+		position: absolute
+		transform: translateY(-50%)
+		&:hover
+			background: #E47209
+	&__prev-button
+		left: -82px
+	&__next-button
+		right: -82px
+	&__prev-button::before, &__next-button::before
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		content: ''
+		display: block
+		width: 16px
+		height: 8px
+	&__prev-button::before
+		background: url("../../assets/images/pets/slider/prev.svg") no-repeat
+		background-size: cover
+	&__next-button::before
+		background: url("../../assets/images/pets/slider/next.svg") no-repeat
+		background-size: cover
+
+
+
+
+
+
+
+
+
+
+

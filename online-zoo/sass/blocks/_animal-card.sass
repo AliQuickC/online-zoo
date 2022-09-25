@@ -1,0 +1,41 @@
+.animal-card
+	width: 366px
+	border: 1px solid #FA6F32
+	border-radius: 5px
+	overflow: hidden
+	cursor: pointer
+	font-family: 'Roboto', sans-serif
+	position: relative
+	padding-bottom: 60px
+	transition: all 0.7s
+	&_banan
+		background: #fff url("../../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat 320px 375px
+	&_meet
+		background: #fff url("../../assets/images/pets/slider/meet-fish_icon.svg") no-repeat 309px 373px
+	&__image
+		width: 100%
+		// margin-bottom: 10px
+	&__image img
+		display: block
+		width: 100%
+	&:hover
+		background-color: #F1F3F2
+	&:hover .animal-card__description
+		bottom: 10px
+	&__description
+		text-align: left
+		position: absolute
+		left: 16px
+		bottom: -40px
+		transition: all 0.7s
+		&-title
+			margin: 0
+			margin-bottom: 1px
+			font-weight: 500
+			font-size: 16px
+			text-transform: uppercase
+		&-native
+			margin: 0
+			font-weight: 300
+			font-size: 15px
+

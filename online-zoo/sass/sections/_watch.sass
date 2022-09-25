@@ -28,19 +28,13 @@
 		text-transform: uppercase
 		& span
 			color: #FFEE2E
-
 	&__online-button
 		display: block
-		width: 298px
-		height: 54px
 		margin-left: auto
 		margin-right: -10px
-		color: #fff
-		border-radius: 25px
-		border: none
 		background: linear-gradient(to right, #F9804B, #FE9013)
-		font-weight: 500
-		text-transform: uppercase
-		font-size: 16px
+		@extend %button
+		// transition: all 1.0s
 		&:hover
-			background: linear-gradient(to right, #E47209, #E47209)
+			background: #E47209
+			// background: linear-gradient(to right, #E47209, #E47209)
