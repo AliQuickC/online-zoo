@@ -311,7 +311,7 @@ template {
   display: none;
 }
 
-.pets__favorite-button, .watch__online-button {
+.pickandfeed__feed-button, .pets__favorite-button, .watch__online-button {
   width: 298px;
   height: 54px;
   color: #fff;
@@ -735,8 +735,7 @@ button, button:active, button:focus {
   display: block;
   margin-left: auto;
   margin-right: -10px;
-  background: -webkit-gradient(linear, left top, right top, from(#F9804B), to(#FE9013));
-  background: linear-gradient(to right, #F9804B, #FE9013);
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 .watch__online-button:hover {
   background: #E47209;
@@ -805,4 +804,137 @@ button, button:active, button:focus {
 }
 .pets__favorite-button:hover {
   background: #E47209;
+}
+
+.pickandfeed {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  padding-top: 69px;
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+  color: #333B41;
+}
+.pickandfeed__container {
+  background: rgba(253, 253, 255, 0.52);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 42px 0px 58px 0px;
+}
+.pickandfeed__title {
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  color: #FE9013;
+}
+.pickandfeed__subtitle {
+  margin: 0;
+  margin-left: 99px;
+  margin-bottom: 42px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.pickandfeed__p1 {
+  margin: 0;
+  margin-left: 99px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+.pickandfeed__p2 {
+  margin: 0;
+  margin-left: 99px;
+  margin-bottom: 62px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.pickandfeed span {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FE9013;
+          text-decoration-color: #FE9013;
+}
+.pickandfeed__how-works {
+  margin: 0;
+  margin-bottom: 43px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+}
+.pickandfeed__how-works-scheme {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+  width: 764px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pickandfeed__feed-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+.pickandfeed__feed-button:hover {
+  background: #E47209;
+}
+
+.how-works-card {
+  width: 168px;
+}
+.how-works-card__picture {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 168px;
+  border-radius: 5px;
+  border: 1px solid #F9804B;
+  position: relative;
+}
+.how-works-card__picture::after {
+  position: absolute;
+  content: "";
+  top: 47%;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+  right: -30px;
+  width: 69px;
+  height: 35px;
+  background: url("../../assets/images/pick-and-feed/arrow.svg") no-repeat center center;
+  background-size: contain;
+}
+.how-works-card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.how-works-card:nth-child(1) .how-works-card__picture {
+  background: #FFFFFF url("../../assets/images/pick-and-feed/pay.svg") no-repeat center center;
+}
+.how-works-card:nth-child(2) .how-works-card__picture {
+  background: #FFFFFF url("../../assets/images/pick-and-feed/zoo.svg") no-repeat center center;
+}
+.how-works-card:nth-child(3) .how-works-card__picture {
+  background: #FFFFFF url("../../assets/images/pick-and-feed/monkey.svg") no-repeat center center;
+}
+.how-works-card:last-child .how-works-card__picture::after {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.testimonials {
+  height: 100px;
+}
+
+.footer {
+  height: 443px;
+  background: #111115;
+  padding-top: 41px;
 }
