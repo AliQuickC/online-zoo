@@ -428,7 +428,7 @@ button, button:active, button:focus {
   height: 22px;
   content: "";
   background-color: #fff;
-  -webkit-mask-image: url("../../assets/icons/bamboo.svg");
+  -webkit-mask-image: url("../assets/icons/bamboo.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-transition: background-color 0.6s;
@@ -512,10 +512,10 @@ button, button:active, button:focus {
   transition: all 0.7s;
 }
 .animal-card_banan {
-  background: #fff url("../../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat 320px 375px;
+  background: #fff url("../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat 320px 375px;
 }
 .animal-card_meet {
-  background: #fff url("../../assets/images/pets/slider/meet-fish_icon.svg") no-repeat 309px 373px;
+  background: #fff url("../assets/images/pets/slider/meet-fish_icon.svg") no-repeat 309px 373px;
 }
 .animal-card__image-container {
   width: 364px;
@@ -625,11 +625,11 @@ button, button:active, button:focus {
   height: 8px;
 }
 .animals-slider__prev-button::before {
-  background: url("../../assets/images/pets/slider/prev.svg") no-repeat;
+  background: url("../assets/images/pets/slider/prev.svg") no-repeat;
   background-size: cover;
 }
 .animals-slider__next-button::before {
-  background: url("../../assets/images/pets/slider/next.svg") no-repeat;
+  background: url("../assets/images/pets/slider/next.svg") no-repeat;
   background-size: cover;
 }
 
@@ -746,7 +746,7 @@ button, button:active, button:focus {
 .backstage {
   padding-top: 140px;
   padding-bottom: 90px;
-  background: url("../../assets/images/backstage/flower_bg.png") no-repeat right 12px;
+  background: url("../assets/images/backstage/flower_bg.png") no-repeat right 12px;
 }
 .backstage__container {
   display: -webkit-box;
@@ -790,7 +790,7 @@ button, button:active, button:focus {
 .pets {
   padding-top: 90px;
   padding-bottom: 100px;
-  background: url("../../assets/images/pets/flower1.png") no-repeat left bottom, url("../../assets/images/pets/flower2.png") no-repeat right bottom;
+  background: url("../assets/images/pets/flower1.png") no-repeat left bottom, url("../assets/images/pets/flower2.png") no-repeat right bottom;
 }
 .pets__container {
   text-align: center;
@@ -908,7 +908,7 @@ button, button:active, button:focus {
   right: -30px;
   width: 69px;
   height: 35px;
-  background: url("../../assets/images/pick-and-feed/arrow.svg") no-repeat center center;
+  background: url("../assets/images/pick-and-feed/arrow.svg") no-repeat center center;
   background-size: contain;
 }
 .how-works-card__description {
@@ -917,13 +917,13 @@ button, button:active, button:focus {
   line-height: 140%;
 }
 .how-works-card:nth-child(1) .how-works-card__picture {
-  background: #FFFFFF url("../../assets/images/pick-and-feed/pay.svg") no-repeat center center;
+  background: #FFFFFF url("../assets/images/pick-and-feed/pay.svg") no-repeat center center;
 }
 .how-works-card:nth-child(2) .how-works-card__picture {
-  background: #FFFFFF url("../../assets/images/pick-and-feed/zoo.svg") no-repeat center center;
+  background: #FFFFFF url("../assets/images/pick-and-feed/zoo.svg") no-repeat center center;
 }
 .how-works-card:nth-child(3) .how-works-card__picture {
-  background: #FFFFFF url("../../assets/images/pick-and-feed/monkey.svg") no-repeat center center;
+  background: #FFFFFF url("../assets/images/pick-and-feed/monkey.svg") no-repeat center center;
 }
 .how-works-card:last-child .how-works-card__picture::after {
   width: 0;
@@ -1031,7 +1031,7 @@ button, button:active, button:focus {
   padding-top: 143px;
   padding-bottom: 180px;
   font-family: "Roboto", sans-serif;
-  background: url("../../assets/images/testimonials/leav.png") no-repeat right bottom;
+  background: url("../assets/images/testimonials/leav.png") no-repeat right bottom;
 }
 .testimonials__title {
   margin: 0;
@@ -1131,16 +1131,16 @@ button, button:active, button:focus {
   border-radius: 50%;
 }
 .testimonials-card:nth-child(1) .testimonials-card__header-photo {
-  background: url("../../assets/images/testimonials/photo1.svg");
+  background: url("../assets/images/testimonials/photo1.svg");
 }
 .testimonials-card:nth-child(2) .testimonials-card__header-photo {
-  background: url("../../assets/images/testimonials/photo2.jpg");
+  background: url("../assets/images/testimonials/photo2.jpg");
 }
 .testimonials-card:nth-child(3) .testimonials-card__header-photo {
-  background: url("../../assets/images/testimonials/photo3.jpg");
+  background: url("../assets/images/testimonials/photo3.jpg");
 }
 .testimonials-card:nth-child(4) .testimonials-card__header-photo {
-  background: url("../../assets/images/testimonials/photo4.jpg");
+  background: url("../assets/images/testimonials/photo4.jpg");
 }
 .testimonials-card__header-name {
   margin: 0;
@@ -1287,16 +1287,16 @@ button, button:active, button:focus {
   margin: 0;
 }
 .social__link:nth-child(1) .social__icon {
-  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/facebook.svg") no-repeat center center;
+  background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/facebook.svg") no-repeat center center;
 }
 .social__link:nth-child(2) .social__icon {
-  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/twitter.svg") no-repeat center center;
+  background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/twitter.svg") no-repeat center center;
 }
 .social__link:nth-child(3) .social__icon {
-  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/instagram.svg") no-repeat center center;
+  background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/instagram.svg") no-repeat center center;
 }
 .social__link:nth-child(4) .social__icon {
-  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/youtube.svg") no-repeat center center;
+  background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/youtube.svg") no-repeat center center;
 }
 .social__link:hover {
   color: #4B9200;
