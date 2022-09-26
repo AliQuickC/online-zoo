@@ -404,17 +404,8 @@ button, button:active, button:focus {
 
 .logo {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 83px;
   height: 52px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   text-decoration: none;
   line-height: 23.5px;
@@ -1075,9 +1066,26 @@ button, button:active, button:focus {
 }
 
 .footer {
-  height: 443px;
   background: #111115;
   padding-top: 41px;
+  padding-bottom: 50px;
+}
+.footer__container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+}
+.footer__container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 .footer__logo {
   display: inline-block;
@@ -1104,6 +1112,8 @@ button, button:active, button:focus {
   font-size: 16px;
   background: transparent;
   outline: none;
+  margin-right: 6px;
+  padding-left: 8px;
 }
 .footer__form-email::-webkit-input-placeholder, .footer__form-email::-moz-placeholder {
   color: #BDBDBD;
@@ -1124,9 +1134,82 @@ button, button:active, button:focus {
   border: 1px solid #4B9200;
 }
 .footer__donate-button {
-  margin-top: 20px;
   display: block;
+  margin-bottom: 45px;
 }
 .footer__donate-button:hover {
   background: #E47209;
+}
+.footer__menu {
+  margin-left: 113px;
+}
+.footer__designed {
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 200%;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+.footer__designed:hover {
+  text-decoration: underline;
+  color: #4B9200;
+}
+
+.social {
+  width: 120px;
+  padding-bottom: 12px;
+}
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  margin-bottom: 10px;
+}
+.social__link:visited {
+  color: #fff;
+}
+.social__link:last-child {
+  margin: 0;
+}
+.social__link:nth-child(1) .social__icon {
+  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/facebook.svg") no-repeat center center;
+}
+.social__link:nth-child(2) .social__icon {
+  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/twitter.svg") no-repeat center center;
+}
+.social__link:nth-child(3) .social__icon {
+  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/instagram.svg") no-repeat center center;
+}
+.social__link:nth-child(4) .social__icon {
+  background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/youtube.svg") no-repeat center center;
+}
+.social__link:hover {
+  color: #4B9200;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.social__link:hover .social__icon {
+  background-color: #4B9200;
+}
+.social__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.social__name {
+  font-weight: 400;
+  font-size: 16px;
 }

@@ -1,7 +1,14 @@
 .footer
-	height: 443px
 	background: #111115
 	padding-top: 41px
+	padding-bottom: 50px
+	&__container1
+		display: flex
+		margin-bottom: 36px
+	&__container2
+		display: flex
+		justify-content: space-between
+		align-items: end
 	&__logo
 		display: inline-block
 	&__form
@@ -24,6 +31,8 @@
 		font-size: 16px
 		background: transparent
 		outline: none
+		margin-right: 6px
+		padding-left: 8px
 		&::-webkit-input-placeholder, &::-moz-placeholder
 			color: #BDBDBD
 	&__form-email:focus
@@ -41,8 +50,60 @@
 			border: 1px solid #4B9200
 
 	&__donate-button
-		margin-top: 20px
 		display: block
 		@extend %button-r5
+		margin-bottom: 45px
 		&:hover
 			background: #E47209
+
+	&__menu
+		margin-left: 113px
+
+	&__designed
+		margin-left: 10px
+		font-weight: 100
+		font-size: 16px
+		line-height: 200%
+		color: #FFFFFF
+		text-decoration: none
+		padding-bottom: 8px
+		letter-spacing: -0.3px
+		&:hover
+			text-decoration: underline
+			color: #4B9200
+
+.social
+	width: 120px
+	padding-bottom: 12px
+	&__link
+		display: flex
+		align-items: center
+		column-gap: 12px
+		text-decoration: none
+		color: #FFFFFF
+		transition: all 0.8s
+		margin-bottom: 10px
+		&:visited
+			color: #fff
+		&:last-child
+			margin: 0
+		&:nth-child(1) .social__icon
+			background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/facebook.svg") no-repeat center center
+		&:nth-child(2) .social__icon
+			background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/twitter.svg") no-repeat center center
+		&:nth-child(3) .social__icon
+			background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/instagram.svg") no-repeat center center
+		&:nth-child(4) .social__icon
+			background: rgba(196, 196, 196, 0.5) url("../../assets/images/footer/youtube.svg") no-repeat center center
+		&:hover
+			color: #4B9200
+			transition: all 0.3s
+			& .social__icon
+				background-color: #4B9200
+	&__icon
+		width: 26px
+		height: 26px
+		border-radius: 50%
+	&__name
+		font-weight: 400
+		font-size: 16px
