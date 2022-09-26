@@ -2,3 +2,47 @@
 	height: 443px
 	background: #111115
 	padding-top: 41px
+	&__logo
+		display: inline-block
+	&__form
+		color: #fff
+		margin-left: auto
+		display: inline-block
+	&__form-title
+		margin: 0
+		margin-bottom: 14px
+		font-weight: 400
+		font-size: 24px
+		color: #FFFFFF
+	&__form-email
+		width: 228px
+		height: 42px
+		color: #F1F3F2
+		border-radius: 2px
+		border: 1px solid rgba(249, 128, 75, 1)
+		font-weight: 400
+		font-size: 16px
+		background: transparent
+		outline: none
+		&::-webkit-input-placeholder, &::-moz-placeholder
+			color: #BDBDBD
+	&__form-email:focus
+		border: 1px solid rgba(75, 146, 0, 1)
+
+	&__form-submit-button
+		width: 129px
+		height: 42px
+		background: #F1F3F2
+		color: #000
+		border: 1px solid #000
+		border-radius: 5px
+		&:hover
+			color: rgba(75, 146, 0, 1)
+			border: 1px solid #4B9200
+
+	&__donate-button
+		margin-top: 20px
+		display: block
+		@extend %button-r5
+		&:hover
+			background: #E47209

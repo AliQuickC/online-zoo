@@ -1,2 +1,110 @@
 .testimonials
-	height: 100px
+	padding-top: 143px
+	padding-bottom: 180px
+	font-family: 'Roboto', sans-serif
+	background: url("../../assets/images/testimonials/leav.png") no-repeat right bottom
+	&__title
+		margin: 0
+		margin-bottom: 52px
+		font-weight: 400
+		font-size: 36px
+		text-align: center
+		color: #333B41
+
+	&__feedback-button
+		@extend %button-r5
+		&:hover
+			background: #E47209
+
+.testimonials-slider
+	margin-bottom: 27px
+	width: 1160px
+	text-align: center
+	&__frame
+		margin-bottom: 14px
+		width: 100%
+		height: 391px
+		display: flex
+		justify-content: space-between
+	&__progress
+		width: 600px
+		height: 6px
+		background: #F5F7F6
+		border-radius: 5px
+		-webkit-appearance: none
+		position: relative
+		&::before
+			background: linear-gradient(to left top,rgba(254, 189, 171, 0.74) 10%, rgba(243, 169, 248, 0.66) 30%, rgba(224, 216, 240, 1) 70%, rgba(234, 247, 254, 1) 90%, rgba(234, 247, 254, 1) 100%)
+			content: ""
+			position: absolute
+			top: -1px
+			bottom: -1px
+			left: -1px
+			right: -1px
+			border-radius: 5px
+			z-index: -1
+
+	&__progress::-webkit-slider-thumb
+		width: 115px
+		height: 6px
+		border-radius: 5px
+		background: #FE9013
+		-webkit-appearance: none
+		cursor: ew-resize
+
+.testimonials-card
+	position: relative
+	width: 266px
+	height: 389px
+	padding: 15px 15px 19px 15px
+	background: #F1F3F2
+	border-radius: 20px
+	text-align: left
+	&::before
+		background: linear-gradient(to left top,rgba(254, 189, 171, 0.74) 10%, rgba(243, 169, 248, 0.66) 30%, rgba(224, 216, 240, 1) 70%, rgba(234, 247, 254, 1) 90%, rgba(234, 247, 254, 1) 100%)
+		content: ""
+		position: absolute
+		top: -2px
+		bottom: -2px
+		left: -2px
+		right: -2px
+		border-radius: 20px
+		z-index: -1
+	&__container
+		height: 100%
+		overflow: hidden
+
+	&__header
+		margin-bottom: 10px
+		display: flex
+		column-gap: 10px
+
+	&__header-photo
+		display: block
+		width: 37px
+		height: 37px
+		border-radius: 50%
+	&:nth-child(1) .testimonials-card__header-photo
+		background: url('../../assets/images/testimonials/photo1.svg')
+	&:nth-child(2) .testimonials-card__header-photo
+		background: url('../../assets/images/testimonials/photo2.jpg')
+	&:nth-child(3) .testimonials-card__header-photo
+		background: url('../../assets/images/testimonials/photo3.jpg')
+	&:nth-child(4) .testimonials-card__header-photo
+		background: url('../../assets/images/testimonials/photo4.jpg')
+
+	&__header-name
+		margin: 0
+		font-weight: 400
+		font-size: 16px
+	&__header-details
+		margin: 0
+		font-weight: 300
+		font-size: 15px
+		color: #BDBDBD
+	&__text
+		margin: 0
+		font-weight: 300
+		font-size: 15px
+		line-height: 120%
+		color: #767474
