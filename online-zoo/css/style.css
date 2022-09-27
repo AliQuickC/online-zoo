@@ -490,6 +490,10 @@ button, button:active, button:focus {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.menu__link:active {
+  color: #E47209;
+  text-decoration: none;
+}
 .menu__item_active a {
   text-decoration: none;
   cursor: url("../assets/cursors/bamboo.cur"), default;
@@ -507,7 +511,7 @@ button, button:active, button:focus {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 14px;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -530,6 +534,18 @@ button, button:active, button:focus {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  position: relative;
+}
+.animal-card__image-popup {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -56px;
+  color: #fff;
+  -webkit-transition: bottom 0.7s;
+  transition: bottom 0.7s;
 }
 .animal-card__image-container img {
   width: 100%;
@@ -537,21 +553,19 @@ button, button:active, button:focus {
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
-.animal-card:hover {
-  background-color: #F1F3F2;
-}
 .animal-card:hover .animal-card__image-container img {
   width: calc(100% + 20px);
   height: calc(100% + 20px);
 }
-.animal-card:hover .animal-card__description {
-  bottom: 10px;
+.animal-card:hover .animal-card__image-popup {
+  bottom: 0;
+  -webkit-transition: bottom 0.3s;
+  transition: bottom 0.3s;
 }
 .animal-card__description {
+  padding-left: 15px;
+  padding-top: 10px;
   text-align: left;
-  position: absolute;
-  left: 16px;
-  bottom: -40px;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -584,7 +598,7 @@ button, button:active, button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  row-gap: 20px;
+  row-gap: 19px;
 }
 .animals-slider__controls {
   width: 100%;
@@ -698,6 +712,10 @@ button, button:active, button:focus {
           text-decoration-color: #e47209;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.header__designed-by:active {
+  color: #E47209;
+  text-decoration: none;
 }
 
 .watch {
@@ -1310,7 +1328,7 @@ button, button:active, button:focus {
 }
 
 .panda {
-  height: 390px;
+  height: 385px;
   background: url("../assets/images/giant-panda-bg.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -1458,11 +1476,17 @@ button, button:active, button:focus {
   background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/youtube.svg") no-repeat center center;
 }
 .social__link:hover {
-  color: #4B9200;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e47209;
+          text-decoration-color: #e47209;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.social__link:hover .social__icon {
+.social__link:active {
+  color: #4B9200;
+  text-decoration: none;
+}
+.social__link:active .social__icon {
   background-color: #4B9200;
 }
 .social__icon {

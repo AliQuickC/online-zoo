@@ -6,7 +6,7 @@
 	cursor: pointer
 	font-family: 'Roboto', sans-serif
 	position: relative
-	padding-bottom: 60px
+	padding-bottom: 14px
 	transition: all 0.7s
 	&_banan
 		background: #fff url("../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat 320px 375px
@@ -19,22 +19,30 @@
 		justify-content: center
 		align-items: center
 		overflow: hidden
+		position: relative
+	&__image-popup
+		padding: 10px
+		background-color: rgba(#000, 0.5)
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -56px
+		color: #fff // !
+		transition: bottom 0.7s
 	&__image-container img
 		width: 100%
 		height: 100%
 		transition: all 0.7s
-	&:hover
-		background-color: #F1F3F2
 	&:hover .animal-card__image-container img
 		width: calc(100% + 20px)
 		height: calc(100% + 20px)
-	&:hover .animal-card__description
-		bottom: 10px
+	&:hover	.animal-card__image-popup
+		bottom: 0
+		transition: bottom 0.3s
 	&__description
+		padding-left: 15px
+		padding-top: 10px
 		text-align: left
-		position: absolute
-		left: 16px
-		bottom: -40px
 		transition: all 0.7s
 		&-title
 			margin: 0
