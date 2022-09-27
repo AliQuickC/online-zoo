@@ -9,7 +9,7 @@
 		background: rgba(253, 253, 255, 0.52)
 		backdrop-filter: blur(2px)
 		border-radius: 20px
-		padding: 42px 0px 58px 0px
+		padding: 42px 0px 65px 0px
 		text-align: center
 	&__details-title
 		margin: 0
@@ -47,15 +47,36 @@
 		font-size: 24px
 	&__animal-image
 		margin-left: -10px
-		margin-bottom: 48px
+		margin-bottom: 44px
 
 	&__another-amount
+		position: relative
 		margin-bottom: 25px
 		width: 268px
 		height: 54px
 		padding-left: 9px
+		background: transparent
+		border: 1px solid #929699
+		border-radius: 3px
+		outline: none
+		background: url("../assets/images/pick-and-feed/dollar.svg") no-repeat 247px 17px
+		// display: block
+		&:focus
+			border: 1px solid #4B9200
+		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+			-webkit-appearance: none
+		// &:after
+		// 	content: ""
+		// 	position: absolute
+		// 	width: 10px
+		// 	height: 20px
+		// 	display: block
+		// 	z-index: 100
+		// 	top: 0
+		// 	left: 0
+		// 	background: red
 	&__periodicity-container
-		margin-bottom: 31px
+		margin-bottom: 34px
 		& label
 			cursor: pointer
 		& label:first-child

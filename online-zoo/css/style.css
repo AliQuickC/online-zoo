@@ -963,7 +963,7 @@ button, button:active, button:focus {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 42px 0px 58px 0px;
+  padding: 42px 0px 65px 0px;
   text-align: center;
 }
 .pickandfeed-donate__details-title {
@@ -1007,16 +1007,28 @@ button, button:active, button:focus {
 }
 .pickandfeed-donate__animal-image {
   margin-left: -10px;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 .pickandfeed-donate__another-amount {
+  position: relative;
   margin-bottom: 25px;
   width: 268px;
   height: 54px;
   padding-left: 9px;
+  background: transparent;
+  border: 1px solid #929699;
+  border-radius: 3px;
+  outline: none;
+  background: url("../assets/images/pick-and-feed/dollar.svg") no-repeat 247px 17px;
+}
+.pickandfeed-donate__another-amount:focus {
+  border: 1px solid #4B9200;
+}
+.pickandfeed-donate__another-amount::-webkit-outer-spin-button, .pickandfeed-donate__another-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .pickandfeed-donate__periodicity-container {
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 .pickandfeed-donate__periodicity-container label {
   cursor: pointer;
@@ -1368,7 +1380,11 @@ button, button:active, button:focus {
   border-radius: 5px;
 }
 .footer__form-submit-button:hover {
-  color: rgb(75, 146, 0);
+  color: #E47209;
+  border: 1px solid #E47209;
+}
+.footer__form-submit-button:active {
+  color: #4B9200;
   border: 1px solid #4B9200;
 }
 .footer__donate-button {
