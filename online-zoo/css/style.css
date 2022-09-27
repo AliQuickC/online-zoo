@@ -624,6 +624,9 @@ button, button:active, button:focus {
   width: 16px;
   height: 8px;
 }
+.animals-slider__prev-button:active, .animals-slider__next-button:active {
+  background: #4B9200;
+}
 .animals-slider__prev-button::before {
   background: url("../assets/images/pets/slider/prev.svg") no-repeat;
   background-size: cover;
@@ -742,6 +745,9 @@ button, button:active, button:focus {
 .watch__online-button:hover {
   background: #E47209;
 }
+.watch__online-button:active {
+  background: #4B9200;
+}
 
 .backstage {
   padding-top: 140px;
@@ -807,6 +813,9 @@ button, button:active, button:focus {
 .pets__favorite-button:hover {
   background: #E47209;
 }
+.pets__favorite-button:active {
+  background: #4B9200;
+}
 
 .pickandfeed {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -853,10 +862,18 @@ button, button:active, button:focus {
   font-size: 16px;
   line-height: 130%;
 }
-.pickandfeed span {
-  text-decoration: underline;
+.pickandfeed a {
+  color: #333B41;
   -webkit-text-decoration-color: #FE9013;
           text-decoration-color: #FE9013;
+}
+.pickandfeed a:visited {
+  color: #333B41;
+}
+.pickandfeed a:hover {
+  color: rgb(75, 146, 0);
+  -webkit-text-decoration-color: rgb(75, 146, 0);
+          text-decoration-color: rgb(75, 146, 0);
 }
 .pickandfeed__how-works {
   margin: 0;
@@ -886,6 +903,9 @@ button, button:active, button:focus {
 }
 .pickandfeed__feed-button:hover {
   background: #E47209;
+}
+.pickandfeed__feed-button:active {
+  background: #4B9200;
 }
 
 .how-works-card {
@@ -1020,6 +1040,9 @@ button, button:active, button:focus {
 .pickandfeed-donate__feed-button:hover {
   background: #E47209;
 }
+.pickandfeed-donate__feed-button:active {
+  background: #4B9200;
+}
 .pickandfeed-donate__share-social {
   margin: 0;
   font-weight: 400;
@@ -1153,6 +1176,9 @@ button, button:active, button:focus {
 }
 .testimonials__feedback-button:hover {
   background: #E47209;
+}
+.testimonials__feedback-button:active {
+  background: #4B9200;
 }
 
 .testimonials-slider {
@@ -1346,11 +1372,18 @@ button, button:active, button:focus {
   border: 1px solid #4B9200;
 }
 .footer__donate-button {
-  display: block;
   margin-bottom: 45px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 54px;
+  vertical-align: middle;
 }
 .footer__donate-button:hover {
   background: #E47209;
+}
+.footer__donate-button:active {
+  background: #4B9200;
 }
 .footer__menu {
   margin-left: 113px;
