@@ -79,4 +79,92 @@
 		font-size: 16px
 		color: #333B41
 
+.donate-progress
+	width: 976px
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 98px
+	&__title
+		margin: 0
+		margin-bottom: 19px
+		margin-left: 4px
+		text-align: left
+	&__range
+		position: relative
+		height: 27px
+		background: #404950
+		border-radius: 2px
+		--indent-left: 26px
+		--distance-between-points: 130px
+		&::before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 915px
+			height: 2px
+			background: #72828E
+	&__point
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: #FFEE2E
+		&:hover
+			background: #FE9013
+	&__point:nth-child(1)
+		left: calc(var(--indent-left) + 0 * var(--distance-between-points))
+	&__point:nth-child(2)
+		left: calc(var(--indent-left) + 1 * var(--distance-between-points))
+	&__point:nth-child(3)
+		left: calc(var(--indent-left) + 2 * var(--distance-between-points))
+	&__point:nth-child(4)
+		left: calc(var(--indent-left) + 3 * var(--distance-between-points))
+	&__point:nth-child(5)
+		left: calc(var(--indent-left) + 4 * var(--distance-between-points))
+	&__point:nth-child(6)
+		left: calc(var(--indent-left) + 5 * var(--distance-between-points))
+	&__point:nth-child(7)
+		left: calc(var(--indent-left) + 6 * var(--distance-between-points))
+	&__point:nth-child(8)
+		left: calc(var(--indent-left) + 7 * var(--distance-between-points))
+	&__point:after
+		content: ""
+		position: absolute
+		width: 23px
+		height: 23px
+		border-radius: 50%
+		border: 2px solid transparent
+		transform: translate(-50%, -50%)
+		top: 50%
+	&__point::before
+		content: ""
+		position: absolute
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		border: 2px solid transparent
+		transform: translate(-50%, -50%)
+		top: 50%
+	&__point_active:after
+		border: 2px solid #FE9013
+	&__point_active:before
+		border: 2px solid #FE9013
+	&__point_active span
+		color: #FE9013
+	&__amount
+		position: absolute
+		top: 36px
+		left: -29px
+		font-weight: 500
+		font-size: 26px
+		color: #333B41
+
+
+
 
