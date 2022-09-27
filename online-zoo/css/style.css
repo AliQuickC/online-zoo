@@ -1035,11 +1035,11 @@ button, button:active, button:focus {
 }
 .pickandfeed-donate__animal-image {
   margin-left: -10px;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 .pickandfeed-donate__another-amount {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   width: 268px;
   height: 54px;
   padding-left: 9px;
@@ -1056,13 +1056,36 @@ button, button:active, button:focus {
   -webkit-appearance: none;
 }
 .pickandfeed-donate__periodicity-container {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+  margin-left: -16px;
 }
 .pickandfeed-donate__periodicity-container label {
   cursor: pointer;
 }
 .pickandfeed-donate__periodicity-container label:first-child {
-  margin-right: 50px;
+  margin-right: 46px;
+}
+.pickandfeed-donate__periodicity-container label {
+  padding-left: 26px;
+  position: relative;
+}
+.pickandfeed-donate__custom-radio {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #FE9013;
+  top: 1px;
+  left: 0;
+}
+.pickandfeed-donate__periodicity-container input:checked + .pickandfeed-donate__custom-radio {
+  border: 1px solid #4B9200;
+  background: #4B9200;
+}
+.pickandfeed-donate__periodicity-container input:active {
+  border: 1px solid #4B9200;
+  background: #4B9200;
 }
 .pickandfeed-donate__monthly {
   margin-right: 10px;
@@ -1071,7 +1094,7 @@ button, button:active, button:focus {
   margin-right: 10px;
 }
 .pickandfeed-donate__feed-button {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -47,11 +47,11 @@
 		font-size: 24px
 	&__animal-image
 		margin-left: -10px
-		margin-bottom: 44px
+		margin-bottom: 45px
 
 	&__another-amount
 		position: relative
-		margin-bottom: 25px
+		margin-bottom: 27px
 		width: 268px
 		height: 54px
 		padding-left: 9px
@@ -76,17 +76,36 @@
 		// 	left: 0
 		// 	background: red
 	&__periodicity-container
-		margin-bottom: 34px
+		margin-bottom: 32px
+		margin-left: -16px
 		& label
 			cursor: pointer
 		& label:first-child
-			margin-right: 50px
+			margin-right: 46px
+	&__periodicity-container label
+		padding-left: 26px
+		position: relative
+	&__custom-radio
+		position: absolute
+		display: block
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		border: 1px solid #FE9013
+		top: 1px
+		left: 0
+	&__periodicity-container input:checked + .pickandfeed-donate__custom-radio
+		border: 1px solid #4B9200
+		background: #4B9200
+	&__periodicity-container input:active
+		border: 1px solid #4B9200
+		background: #4B9200
 	&__monthly
 		margin-right: 10px
 	&__once
 		margin-right: 10px
 	&__feed-button
-		margin-bottom: 30px
+		margin-bottom: 32px
 		display: block
 		margin-left: auto
 		margin-right: auto
@@ -187,6 +206,10 @@
 		font-weight: 500
 		font-size: 26px
 		color: #333B41
+
+
+
+
 
 
 
