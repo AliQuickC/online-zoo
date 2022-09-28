@@ -729,7 +729,7 @@ button, button:active, button:focus {
 }
 
 .watch {
-  background: url("../assets/images/giant-panda-bg.jpg") no-repeat center center;
+  background: url("../assets/images/giant-panda-bg.jpg") no-repeat center bottom;
   background-size: cover;
   padding-top: 12px;
   padding-bottom: 100px;
@@ -769,6 +769,7 @@ button, button:active, button:focus {
   margin-left: auto;
   margin-right: -10px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  letter-spacing: -0.8px;
 }
 .watch__online-button:hover {
   background: #E47209;
