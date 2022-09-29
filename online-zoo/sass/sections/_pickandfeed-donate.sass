@@ -49,32 +49,43 @@
 		margin-left: -10px
 		margin-bottom: 45px
 
-	&__another-amount
+	&__another-amount-container
+		display: inline-block
 		position: relative
-		margin-bottom: 27px
 		width: 268px
 		height: 54px
+		margin-bottom: 27px
+		& span
+			content: ""
+			position: absolute
+			width: 10px
+			height: 20px
+			display: block
+			z-index: 100
+			top: 50%
+			right: 10px
+			transform: translateY(-50%)
+			background-color: #929699
+			-webkit-mask-image: url("../assets/images/pick-and-feed/dollar.svg")
+			-webkit-mask-repeat: no-repeat
+			-webkit-mask-size: contain
+	&__another-amount
+		width: 100%
+		height: 100%
 		padding-left: 9px
 		background: transparent
 		border: 1px solid #929699
 		border-radius: 3px
 		outline: none
-		background: url("../assets/images/pick-and-feed/dollar.svg") no-repeat 247px 17px
-		// display: block
+		// background: url("../assets/images/pick-and-feed/dollar.svg") no-repeat 247px 17px
 		&:focus
 			border: 1px solid #4B9200
+		&:focus + span
+			background-color: #4B9200
+		&:focus::-webkit-input-placeholder
+			color: #4B9200
 		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
 			-webkit-appearance: none
-		// &:after
-		// 	content: ""
-		// 	position: absolute
-		// 	width: 10px
-		// 	height: 20px
-		// 	display: block
-		// 	z-index: 100
-		// 	top: 0
-		// 	left: 0
-		// 	background: red
 	&__periodicity-container
 		margin-bottom: 32px
 		margin-left: -16px
@@ -206,11 +217,3 @@
 		font-weight: 500
 		font-size: 26px
 		color: #333B41
-
-
-
-
-
-
-
-
