@@ -2,15 +2,34 @@
 	height: 80px
 	background-color: #000
 	@include header-font(500, 16px)
+	@media(max-width: 860px)
+		height: 34px
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 100
 
 	&__container
 		display: flex
 		justify-content: space-between
 		align-items: center
 		column-gap: 63px
+		@media(max-width: 1260px)
+			padding-left: 30px
+			padding-right: 30px
+		@media(max-width: 576px)
+			padding-left: 9px
+			padding-right: 9px
+
 
 	&__logo
 		margin-top: 1px
+
+	&__burger-button
+		display: none
+		@media(max-width: 860px)
+			display: inline-flex
 
 	&__nav
 		display: flex
@@ -19,6 +38,8 @@
 		column-gap: 58px
 		height: 52px
 		flex-grow: 1
+		@media(max-width: 860px)
+			display: none
 
 	&__designed-by
 		height: 52px

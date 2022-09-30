@@ -10,6 +10,12 @@
 	border-radius: 2px
 	cursor: pointer
 	transition:  color 0.6s, border 0.6s
+	@media(max-width: 860px)
+		border: 2px solid transparent
+		width: 50px
+		height: 29px
+		font-size: 12px
+		line-height: 120%
 
 .logo:after
 	position: absolute
@@ -23,6 +29,11 @@
 	-webkit-mask-repeat: no-repeat
 	-webkit-mask-size: contain
 	transition: background-color 0.6s
+	@media(max-width: 860px)
+		width: 6px
+		height: 13px
+		left: 4px
+		bottom: -1px
 
 .logo:visited
 	color: #fff
@@ -31,6 +42,9 @@
 	color: #E47209
 	border: 2px solid #E47209
 	transition: color 0.3s, border 0.3s
+	@media(max-width: 860px)
+		border: 2px solid transparent
 	&:after
 		background-color: #E47209
 		transition: background-color 0.3s
+

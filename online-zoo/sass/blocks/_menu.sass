@@ -5,10 +5,9 @@
 	padding: 0
 	list-style-type: none
 	font-family: 'Roboto', sans-serif
-	&__item
-		margin-right: 58px
-	&__item:last-child
-		margin-right: 0
+	column-gap: 58px
+	@media(max-width: 1000px)
+		column-gap: 48px
 	&__link
 		display: block
 		height: 100%

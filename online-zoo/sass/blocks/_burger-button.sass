@@ -1,0 +1,50 @@
+.burger-button
+	width: 20px
+	height: 12px
+	padding: 0
+	cursor: pointer
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	outline: none
+	user-select: none
+	border: none
+	background-color: transparent
+	&__line-container
+		width: 18px
+		height: 10px
+		position: relative
+	span
+		position: absolute
+		width: 100%
+		height: 2px
+		background-color: #fff
+		left: 50%
+		transform: translateX(-50%)
+		border-radius: 0.05em
+	span:nth-child(1)
+		top: 50%
+		transform: translateX(-50%) translateY(-250%)
+		transition: transform 0.5s
+	span:nth-child(2)
+		top: 50%
+		transform: translate(-50%, -50%)
+		transition: background 0.3s 0.3s
+	span:nth-child(3)
+		top: 50%
+		transform: translateX(-50%) translateY(150%)
+		transition: transform 0.5s
+
+	&.active
+		span:nth-child(1)
+			transform: translateX(-50%) translateY(50%) rotate(135deg)
+			transition: transform 0.5s
+		span:nth-child(2)
+			background: transparent
+			transition: none
+		span:nth-child(3)
+			transform: translateX(-50%) translateY(50%) rotate(-135deg)
+			transition: transform 0.5s
+
+.scroll-block
+	// overflow: hidden
