@@ -3,8 +3,28 @@
 	background-size: cover
 	padding-top: 12px
 	padding-bottom: 100px
+	@media(max-width: 1260px)
+		padding-top: 0
+		padding-bottom: 47px
+		// background: url("../assets/images/giant-panda-bg.jpg") no-repeat center center
+	@media(max-width: 860px)
+		padding-top: 10px
+		padding-bottom: 40px
+		margin-top: 34px
+	@media(max-width: 576px)
+		padding-top: 22px
+		padding-bottom: 27px
 	&__container
 		padding-right: 108px
+		@media(max-width: 1260px)
+			padding-right: 175px
+		@media(max-width: 860px)
+			padding-left: 20px
+			padding-right: 72px
+		@media(max-width: 576px)
+			position: relative
+			padding-right: 38px
+			padding-left: 0
 	&__title-wrapper
 		margin-bottom: 69px
 		margin-left: auto
@@ -13,6 +33,21 @@
 		height: 465px
 		border-radius: 50%
 		position: relative
+		@media(max-width: 1260px)
+			width: 367px
+			height: 367px
+			margin-bottom: 48px
+			margin-top: -12px
+		@media(max-width: 860px)
+			width: 238px
+			height: 238px
+			margin-bottom: 48px
+			margin-top: 0
+			margin-bottom: -2px
+		@media(max-width: 576px)
+			margin-bottom: 20px
+			width: 119px
+			height: 119px
 	&__title
 		position: absolute
 		top: 74px
@@ -20,12 +55,29 @@
 		width: 500px
 		margin: 0
 		color: #fff
-		font-weight: bold
 		font-size: 106px
 		font-weight: 700
 		text-align: center
 		line-height: 80px
 		text-transform: uppercase
+		@media(max-width: 1260px)
+			top: 54px
+			left: 7px
+			font-size: 85px
+			line-height: 75%
+		@media(max-width: 860px)
+			top: 38px
+			left: 35px
+			width: 260px
+			font-size: 54px
+			line-height: 76%
+		@media(max-width: 576px)
+			width: 130px
+			font-size: 28px
+			line-height: 75%
+		@media(max-width: 576px)
+			top: 20px
+			left: 17px
 		& span
 			color: #FFEE2E
 	&__online-button
@@ -35,7 +87,15 @@
 		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
 		letter-spacing: -0.8px
 		@extend %button-r25
-		// transition: all 1.0s
+		@media(max-width: 1260px)
+			margin-right: -39px
+		@media(max-width: 860px)
+			margin-left: unset
+		@media(max-width: 576px)
+			position: absolute
+			bottom: -121px
+			left: 50%
+			transform: translateX(-50%)
 		&:hover
 			background: #E47209
 		&:active

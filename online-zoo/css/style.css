@@ -782,15 +782,16 @@ button, button:active, button:focus {
   font-weight: 500;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 100;
 }
 @media (max-width: 860px) {
   .header {
     height: 34px;
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
-    z-index: 100;
   }
 }
 .header__container {
@@ -811,6 +812,12 @@ button, button:active, button:focus {
   .header__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (max-width: 860px) {
+  .header__container {
+    padding-left: 18px;
+    padding-right: 19px;
   }
 }
 @media (max-width: 576px) {
@@ -886,8 +893,45 @@ button, button:active, button:focus {
   padding-top: 12px;
   padding-bottom: 100px;
 }
+@media (max-width: 1260px) {
+  .watch {
+    padding-top: 0;
+    padding-bottom: 47px;
+  }
+}
+@media (max-width: 860px) {
+  .watch {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .watch {
+    padding-top: 22px;
+    padding-bottom: 27px;
+  }
+}
 .watch__container {
   padding-right: 108px;
+}
+@media (max-width: 1260px) {
+  .watch__container {
+    padding-right: 175px;
+  }
+}
+@media (max-width: 860px) {
+  .watch__container {
+    padding-left: 20px;
+    padding-right: 72px;
+  }
+}
+@media (max-width: 576px) {
+  .watch__container {
+    position: relative;
+    padding-right: 38px;
+    padding-left: 0;
+  }
 }
 .watch__title-wrapper {
   margin-bottom: 69px;
@@ -899,6 +943,30 @@ button, button:active, button:focus {
   border-radius: 50%;
   position: relative;
 }
+@media (max-width: 1260px) {
+  .watch__title-wrapper {
+    width: 367px;
+    height: 367px;
+    margin-bottom: 48px;
+    margin-top: -12px;
+  }
+}
+@media (max-width: 860px) {
+  .watch__title-wrapper {
+    width: 238px;
+    height: 238px;
+    margin-bottom: 48px;
+    margin-top: 0;
+    margin-bottom: -2px;
+  }
+}
+@media (max-width: 576px) {
+  .watch__title-wrapper {
+    margin-bottom: 20px;
+    width: 119px;
+    height: 119px;
+  }
+}
 .watch__title {
   position: absolute;
   top: 74px;
@@ -906,12 +974,41 @@ button, button:active, button:focus {
   width: 500px;
   margin: 0;
   color: #fff;
-  font-weight: bold;
   font-size: 106px;
   font-weight: 700;
   text-align: center;
   line-height: 80px;
   text-transform: uppercase;
+}
+@media (max-width: 1260px) {
+  .watch__title {
+    top: 54px;
+    left: 7px;
+    font-size: 85px;
+    line-height: 75%;
+  }
+}
+@media (max-width: 860px) {
+  .watch__title {
+    top: 38px;
+    left: 35px;
+    width: 260px;
+    font-size: 54px;
+    line-height: 76%;
+  }
+}
+@media (max-width: 576px) {
+  .watch__title {
+    width: 130px;
+    font-size: 28px;
+    line-height: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .watch__title {
+    top: 20px;
+    left: 17px;
+  }
 }
 .watch__title span {
   color: #FFEE2E;
@@ -922,6 +1019,25 @@ button, button:active, button:focus {
   margin-right: -10px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   letter-spacing: -0.8px;
+}
+@media (max-width: 1260px) {
+  .watch__online-button {
+    margin-right: -39px;
+  }
+}
+@media (max-width: 860px) {
+  .watch__online-button {
+    margin-left: unset;
+  }
+}
+@media (max-width: 576px) {
+  .watch__online-button {
+    position: absolute;
+    bottom: -121px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .watch__online-button:hover {
   background: #E47209;
