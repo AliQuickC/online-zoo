@@ -1,5 +1,6 @@
 .animal-card
-	width: 366px
+	width: var(--card-width)
+	height: var(--card-height)
 	border: 1px solid #FA6F32
 	border-radius: 5px
 	overflow: hidden
@@ -8,13 +9,33 @@
 	position: relative
 	padding-bottom: 14px
 	transition: all 0.7s
-	&_banan
-		background: #fff url("../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat 320px 375px
-	&_meet
-		background: #fff url("../assets/images/pets/slider/meet-fish_icon.svg") no-repeat 309px 373px
+	&::after
+		content: ""
+		position: absolute
+		width: 48px
+		height: 38px
+		@media(max-width: 860px)
+			width: 38px
+			height: 30px
+	&_banan::after
+		right: 3px
+		bottom: 11px
+		background: transparent url("../assets/images/pets/slider/banana-bamboo_icon.svg") no-repeat center center
+		background-size: contain
+		@media(max-width: 860px)
+			right: 2px
+			bottom: 9px
+	&_meet::after
+		right: 8px
+		bottom: 13px
+		background: transparent url("../assets/images/pets/slider/meet-fish_icon.svg") no-repeat center center
+		background-size: contain
+		@media(max-width: 860px)
+			right: 4px
+			bottom: 10px
 	&__image-container
-		width: 364px
-		height: 364px
+		width: var(--card-width)
+		height: var(--card-width)
 		display: flex
 		justify-content: center
 		align-items: center
@@ -29,6 +50,8 @@
 		bottom: -56px
 		color: #fff // !
 		transition: bottom 0.7s
+		@media(max-width: 1260px)
+			bottom: -59px
 	&__image-container img
 		width: 100%
 		height: 100%
@@ -46,14 +69,23 @@
 		padding-top: 10px
 		text-align: left
 		transition: all 0.7s
+		@media(max-width: 860px)
+			padding-top: 7px
+			padding-left: 11px
 		&-title
 			margin: 0
 			margin-bottom: 1px
 			font-weight: 500
 			font-size: 16px
 			text-transform: uppercase
+			@media(max-width: 860px)
+				font-size: 12.4px
+				letter-spacing: 0.2px
 		&-native
 			margin: 0
 			font-weight: 300
 			font-size: 15px
+			@media(max-width: 860px)
+				font-size: 11.6px
+				letter-spacing: -0.3px
 
