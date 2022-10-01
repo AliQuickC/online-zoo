@@ -1049,7 +1049,42 @@ button, button:active, button:focus {
 .backstage {
   padding-top: 140px;
   padding-bottom: 90px;
-  background: url("../assets/images/backstage/flower_bg.png") no-repeat right 12px;
+  background: url("../assets/images/backstage/flower_bg.png") no-repeat calc(100% + 10px) 12px;
+}
+@media (max-width: 1500px) {
+  .backstage {
+    background: transparent;
+  }
+}
+@media (max-width: 1260px) {
+  .backstage {
+    padding-top: 109px;
+    padding-bottom: 71px;
+  }
+}
+@media (max-width: 999px) {
+  .backstage {
+    padding-top: 69px;
+    padding-left: 48px;
+    background: url("../assets/images/backstage/flower_middle.png") no-repeat right -7px;
+  }
+}
+@media (max-width: 860px) {
+  .backstage {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 639px) {
+  .backstage {
+    background: url("../assets/images/backstage/flower_small.png") no-repeat right 38px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage {
+    padding-top: 109px;
+    padding-left: 11px;
+    padding-right: 12px;
+  }
 }
 .backstage__container {
   display: -webkit-box;
@@ -1059,13 +1094,56 @@ button, button:active, button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1260px) {
+  .backstage__container {
+    width: 940px;
+  }
+}
+@media (max-width: 999px) {
+  .backstage__container {
+    width: auto;
+  }
+}
 .backstage__picture {
-  max-width: 609px;
+  width: 609px;
+  height: 403px;
+  overflow: hidden;
+}
+@media (max-width: 1260px) {
+  .backstage__picture {
+    width: 455px;
+    height: 408px;
+  }
+}
+@media (max-width: 999px) {
+  .backstage__picture {
+    display: none;
+  }
+}
+.backstage__picture img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1260px) {
+  .backstage__picture img {
+    width: auto;
+    margin-left: -81px;
+  }
 }
 .backstage__text {
   width: 465px;
   font-weight: 400;
   color: #333B41;
+}
+@media (max-width: 1260px) {
+  .backstage__text {
+    width: 455px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage__text {
+    width: auto;
+  }
 }
 .backstage__text > * {
   margin: 0;
@@ -1076,22 +1154,83 @@ button, button:active, button:focus {
   line-height: 120%;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  .backstage__title {
+    margin-top: -10px;
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage__title {
+    margin-top: -4px;
+    margin-bottom: 9px;
+    max-width: 300px;
+    font-size: 24px;
+  }
+}
 .backstage__description {
   margin-bottom: 54px;
   font-size: 16px;
   line-height: 130%;
 }
+@media (max-width: 999px) {
+  .backstage__description {
+    margin-left: -4px;
+    margin-bottom: 29px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage__description {
+    margin-left: 0;
+    margin-bottom: 21px;
+    max-width: 300px;
+  }
+}
 .backstage__details-title {
   margin-bottom: 34px;
   font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 1260px) {
+  .backstage__details-title {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 999px) {
+  .backstage__details-title {
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage__details-title {
+    margin-bottom: 10px;
+  }
 }
 .backstage__details-description {
   font-size: 16px;
   line-height: 22.4px;
 }
+@media (max-width: 1260px) {
+  .backstage__details-description {
+    width: 98%;
+  }
+}
+@media (max-width: 999px) {
+  .backstage__details-description {
+    width: 495px;
+    margin-left: -4px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .backstage__details-description {
+    width: auto;
+    margin-left: -1px;
+  }
+}
 
 .pets {
-  padding-top: 90px;
+  padding-top: 86px;
   padding-bottom: 100px;
   background: url("../assets/images/pets/flower1.png") no-repeat left bottom, url("../assets/images/pets/flower2.png") no-repeat right bottom;
 }
@@ -1540,14 +1679,14 @@ button, button:active, button:focus {
 }
 
 .testimonials-slider {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   width: 1160px;
   text-align: center;
 }
 .testimonials-slider__frame {
   margin-bottom: 14px;
   width: 100%;
-  height: 391px;
+  height: 388px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1586,8 +1725,8 @@ button, button:active, button:focus {
 
 .testimonials-card {
   position: relative;
-  width: 266px;
-  height: 389px;
+  width: 264px;
+  height: 100%;
   padding: 15px 15px 19px 15px;
   background: #F1F3F2;
   border-radius: 20px;
