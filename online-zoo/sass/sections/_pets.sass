@@ -11,12 +11,17 @@
 		padding-top: 9px
 		padding-bottom: 100px
 		background: url("../assets/images/pets/flower1_small.png") no-repeat left bottom, url("../assets/images/pets/flower2_small.png") no-repeat right bottom
+	@media(max-width: 639px)
+		padding-bottom: 60px
+		background: url("../assets/images/pets/flower1_very_small.png") no-repeat left bottom, url("../assets/images/pets/flower2_very_small.png") no-repeat right calc(100% - -4px)
 	&__container
 		text-align: center
 	&__animals-slider
 		margin-bottom: 80px
 		@media(max-width: 860px)
 			margin-bottom: 60px
+		@media(max-width: 639px)
+			margin-bottom: 19px
 	&__favorite-button
 		margin-left: auto
 		margin-right: auto

@@ -4,12 +4,29 @@
 	padding-bottom: 100px
 	font-family: 'Roboto', sans-serif
 	color: #333B41
+	@media(max-width: 1260px)
+		padding: 30px 30px 50px 30px
+	@media(max-width: 999px)
+		padding: 20px 0 20px 0
+	@media(max-width: 639px)
+		padding: 20px 10px 20px 10px
 
 	&__container
 		background: rgba(253, 253, 255, 0.52)
 		backdrop-filter: blur(2px)
 		border-radius: 20px
 		padding: 42px 0px 58px 0px
+		@media(max-width: 1260px)
+			width: 940px
+			padding-top: 32px
+			padding-bottom: 50px
+		@media(max-width: 999px)
+			width: 100%
+			padding-top: 11px
+			padding-bottom: 60px
+		@media(max-width: 639px)
+			padding-top: 21px
+			padding-bottom: 40px
 	&__title
 		margin: 0
 		margin-bottom: 32px
@@ -17,12 +34,34 @@
 		font-weight: 400
 		font-size: 48px
 		color: #FE9013
+		@media(max-width: 1260px)
+			margin-bottom: 23px
+		@media(max-width: 999px)
+			margin-bottom: 20px
+			font-size: 42px
+		@media(max-width: 639px)
+			margin-bottom: 12px
+			font-size: 24px
 	&__subtitle
 		margin: 0
 		margin-left: 99px
 		margin-bottom: 42px
 		font-weight: 400
 		font-size: 24px
+		@media(max-width: 1260px)
+			margin-left: 49px
+			margin-bottom: 21px
+		@media(max-width: 999px)
+			margin-left: 19px
+			margin-bottom: 19px
+			max-width: 600px
+			letter-spacing: -0.9px
+		@media(max-width: 639px)
+			margin-left: -1px
+			margin-bottom: 24px
+			font-size: 18px
+			text-align: center
+			letter-spacing: 0.1px
 	&__p1
 		margin: 0
 		margin-left: 99px
@@ -30,6 +69,15 @@
 		font-weight: 500
 		font-size: 16px
 		line-height: 130%
+		@media(max-width: 1260px)
+			margin-left: 49px
+			max-width: 813px
+		@media(max-width: 999px)
+			margin-left: 20px
+			margin-bottom: 11px
+			max-width: 600px
+		@media(max-width: 639px)
+			display: none
 	&__p2
 		margin: 0
 		margin-left: 99px
@@ -37,6 +85,19 @@
 		font-weight: 400
 		font-size: 16px
 		line-height: 130%
+		br
+			@media(max-width: 1260px)
+				display: none
+		@media(max-width: 1260px)
+			margin-left: 49px
+			margin-bottom: 43px
+			max-width: 813px
+		@media(max-width: 999px)
+			margin-left: 20px
+			margin-bottom: 33px
+			max-width: 600px
+		@media(max-width: 639px)
+			display: none
 	& a
 		color: #333B41
 		text-decoration-color: #FE9013
@@ -53,7 +114,11 @@
 		text-align: center
 		font-weight: 400
 		font-size: 36px
-
+		@media(max-width: 999px)
+			margin-bottom: 21px
+		@media(max-width: 639px)
+			margin-bottom: 20px
+			font-size: 24px
 	&__how-works-scheme
 		margin: 0
 		margin-left: auto
@@ -61,7 +126,21 @@
 		margin-bottom: 62px
 		width: 764px
 		display: flex
-		justify-content: space-between
+		column-gap: 131px
+		@media(max-width: 1260px)
+			margin-bottom: 71px
+		@media(max-width: 999px)
+			margin-bottom: 41px
+			width: 600px
+			column-gap: 42px
+		@media(max-width: 639px)
+			margin-bottom: 38px
+			width: 168px
+			flex-direction: column
+			row-gap: 42px
+	&__how-works-scheme-card:nth-child(3)
+		@media(max-width: 639px)
+			margin-top: -14px
 
 	&__feed-button
 		display: block
@@ -83,6 +162,8 @@
 		border-radius: 5px
 		border: 1px solid #F9804B
 		position: relative
+		@media(max-width: 639px)
+			margin-bottom: 10px
 		&::after
 			position: absolute
 			content: ''
@@ -91,8 +172,24 @@
 			right: -30px
 			width: 69px
 			height: 35px
-			background: url("../assets/images/pick-and-feed/arrow.svg") no-repeat center center
+			background: url("../assets/images/pick-and-feed/arrow-grey.svg") no-repeat center center
 			background-size: contain
+			@media(max-width: 999px)
+				width: 95px
+				top: -2px
+				right: 32px
+				background: url("../assets/images/pick-and-feed/arrow-green-right.svg") no-repeat center center
+				z-index: 10
+			@media(max-width: 639px)
+				width: 35px
+				height: 95px
+				top: 205px
+				right: -2px
+				background: url("../assets/images/pick-and-feed/arrow-green-down.svg") no-repeat center center
+	&:nth-child(2) .how-works-card__picture::after
+		@media(max-width: 639px)
+			top: 212px
+
 	&__description
 		font-weight: 400
 		font-size: 16px

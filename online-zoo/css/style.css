@@ -1396,6 +1396,12 @@ button, button:active, button:focus {
     background: url("../assets/images/pets/flower1_small.png") no-repeat left bottom, url("../assets/images/pets/flower2_small.png") no-repeat right bottom;
   }
 }
+@media (max-width: 639px) {
+  .pets {
+    padding-bottom: 60px;
+    background: url("../assets/images/pets/flower1_very_small.png") no-repeat left bottom, url("../assets/images/pets/flower2_very_small.png") no-repeat right calc(100% + 4px);
+  }
+}
 .pets__container {
   text-align: center;
 }
@@ -1405,6 +1411,11 @@ button, button:active, button:focus {
 @media (max-width: 860px) {
   .pets__animals-slider {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 639px) {
+  .pets__animals-slider {
+    margin-bottom: 19px;
   }
 }
 .pets__favorite-button {
@@ -1427,12 +1438,47 @@ button, button:active, button:focus {
   font-family: "Roboto", sans-serif;
   color: #333B41;
 }
+@media (max-width: 1260px) {
+  .pickandfeed {
+    padding: 30px 30px 50px 30px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed {
+    padding: 20px 0 20px 0;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed {
+    padding: 20px 10px 20px 10px;
+  }
+}
 .pickandfeed__container {
   background: rgba(253, 253, 255, 0.52);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: 20px;
   padding: 42px 0px 58px 0px;
+}
+@media (max-width: 1260px) {
+  .pickandfeed__container {
+    width: 940px;
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__container {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__container {
+    padding-top: 21px;
+    padding-bottom: 40px;
+  }
 }
 .pickandfeed__title {
   margin: 0;
@@ -1442,12 +1488,52 @@ button, button:active, button:focus {
   font-size: 48px;
   color: #FE9013;
 }
+@media (max-width: 1260px) {
+  .pickandfeed__title {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__title {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+}
 .pickandfeed__subtitle {
   margin: 0;
   margin-left: 99px;
   margin-bottom: 42px;
   font-weight: 400;
   font-size: 24px;
+}
+@media (max-width: 1260px) {
+  .pickandfeed__subtitle {
+    margin-left: 49px;
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__subtitle {
+    margin-left: 19px;
+    margin-bottom: 19px;
+    max-width: 600px;
+    letter-spacing: -0.9px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__subtitle {
+    margin-left: -1px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
 }
 .pickandfeed__p1 {
   margin: 0;
@@ -1457,6 +1543,24 @@ button, button:active, button:focus {
   font-size: 16px;
   line-height: 130%;
 }
+@media (max-width: 1260px) {
+  .pickandfeed__p1 {
+    margin-left: 49px;
+    max-width: 813px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__p1 {
+    margin-left: 20px;
+    margin-bottom: 11px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__p1 {
+    display: none;
+  }
+}
 .pickandfeed__p2 {
   margin: 0;
   margin-left: 99px;
@@ -1464,6 +1568,30 @@ button, button:active, button:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+}
+@media (max-width: 1260px) {
+  .pickandfeed__p2 br {
+    display: none;
+  }
+}
+@media (max-width: 1260px) {
+  .pickandfeed__p2 {
+    margin-left: 49px;
+    margin-bottom: 43px;
+    max-width: 813px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__p2 {
+    margin-left: 20px;
+    margin-bottom: 33px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__p2 {
+    display: none;
+  }
 }
 .pickandfeed a {
   color: #333B41;
@@ -1485,6 +1613,17 @@ button, button:active, button:focus {
   font-weight: 400;
   font-size: 36px;
 }
+@media (max-width: 999px) {
+  .pickandfeed__how-works {
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__how-works {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
 .pickandfeed__how-works-scheme {
   margin: 0;
   margin-left: auto;
@@ -1494,9 +1633,39 @@ button, button:active, button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-column-gap: 131px;
+     -moz-column-gap: 131px;
+          column-gap: 131px;
+}
+@media (max-width: 1260px) {
+  .pickandfeed__how-works-scheme {
+    margin-bottom: 71px;
+  }
+}
+@media (max-width: 999px) {
+  .pickandfeed__how-works-scheme {
+    margin-bottom: 41px;
+    width: 600px;
+    -webkit-column-gap: 42px;
+       -moz-column-gap: 42px;
+            column-gap: 42px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__how-works-scheme {
+    margin-bottom: 38px;
+    width: 168px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 42px;
+  }
+}
+@media (max-width: 639px) {
+  .pickandfeed__how-works-scheme-card:nth-child(3) {
+    margin-top: -14px;
+  }
 }
 .pickandfeed__feed-button {
   display: block;
@@ -1522,6 +1691,11 @@ button, button:active, button:focus {
   border: 1px solid #F9804B;
   position: relative;
 }
+@media (max-width: 639px) {
+  .how-works-card__picture {
+    margin-bottom: 10px;
+  }
+}
 .how-works-card__picture::after {
   position: absolute;
   content: "";
@@ -1531,8 +1705,31 @@ button, button:active, button:focus {
   right: -30px;
   width: 69px;
   height: 35px;
-  background: url("../assets/images/pick-and-feed/arrow.svg") no-repeat center center;
+  background: url("../assets/images/pick-and-feed/arrow-grey.svg") no-repeat center center;
   background-size: contain;
+}
+@media (max-width: 999px) {
+  .how-works-card__picture::after {
+    width: 95px;
+    top: -2px;
+    right: 32px;
+    background: url("../assets/images/pick-and-feed/arrow-green-right.svg") no-repeat center center;
+    z-index: 10;
+  }
+}
+@media (max-width: 639px) {
+  .how-works-card__picture::after {
+    width: 35px;
+    height: 95px;
+    top: 205px;
+    right: -2px;
+    background: url("../assets/images/pick-and-feed/arrow-green-down.svg") no-repeat center center;
+  }
+}
+@media (max-width: 639px) {
+  .how-works-card:nth-child(2) .how-works-card__picture::after {
+    top: 212px;
+  }
 }
 .how-works-card__description {
   font-weight: 400;
