@@ -431,8 +431,9 @@ button, button:active, button:focus {
   -webkit-transition: color 0.6s, border 0.6s;
   transition: color 0.6s, border 0.6s;
 }
+
 @media (max-width: 860px) {
-  .logo {
+  .logo_header {
     border: 2px solid transparent;
     width: 50px;
     height: 29px;
@@ -441,7 +442,15 @@ button, button:active, button:focus {
   }
 }
 
-.logo:after {
+@media (max-width: 639px) {
+  .logo_footer {
+    width: auto;
+    height: auto;
+    border: 2px solid transparent;
+  }
+}
+
+.logo::after {
   position: absolute;
   left: 8px;
   bottom: 5px;
@@ -455,8 +464,15 @@ button, button:active, button:focus {
   -webkit-transition: background-color 0.6s;
   transition: background-color 0.6s;
 }
+
+@media (max-width: 639px) {
+  .logo_footer::after {
+    left: 71px;
+  }
+}
+
 @media (max-width: 860px) {
-  .logo:after {
+  .logo_header::after {
     width: 6px;
     height: 13px;
     left: 4px;
@@ -474,15 +490,16 @@ button, button:active, button:focus {
   -webkit-transition: color 0.3s, border 0.3s;
   transition: color 0.3s, border 0.3s;
 }
-@media (max-width: 860px) {
-  .logo:hover {
-    border: 2px solid transparent;
-  }
-}
 .logo:hover:after {
   background-color: #E47209;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+
+@media (max-width: 860px) {
+  .logo_header:hover {
+    border: 2px solid transparent;
+  }
 }
 
 .menu {
@@ -503,6 +520,21 @@ button, button:active, button:focus {
     -webkit-column-gap: 48px;
        -moz-column-gap: 48px;
             column-gap: 48px;
+  }
+}
+@media (max-width: 860px) {
+  .menu {
+    -webkit-column-gap: 37px;
+       -moz-column-gap: 37px;
+            column-gap: 37px;
+  }
+}
+@media (max-width: 639px) {
+  .menu {
+    --menu-height: auto;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 .menu__link {
@@ -653,6 +685,11 @@ button, button:active, button:focus {
   .animals-slider {
     --card-width: 285px;
     --card-height: 332px;
+  }
+}
+@media (max-width: 639px) {
+  .animals-slider {
+    --row-gap: 20px;
   }
 }
 
@@ -817,6 +854,7 @@ button, button:active, button:focus {
 @media (max-width: 639px) {
   .animals-slider__frame {
     width: var(--card-width);
+    height: calc(var(--card-height) * 4 + var(--row-gap) * 3);
   }
 }
 .animals-slider__cards {
@@ -830,7 +868,6 @@ button, button:active, button:focus {
 }
 @media (max-width: 639px) {
   .animals-slider__cards {
-    row-gap: 20px;
     width: var(--card-width);
   }
 }
@@ -2100,12 +2137,12 @@ button, button:active, button:focus {
   .testimonials__slider {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 }
 @media (max-width: 639px) {
   .testimonials__slider {
-    margin-bottom: 22px;
+    margin-bottom: 28px;
   }
 }
 .testimonials__feedback-button {
@@ -2158,6 +2195,11 @@ button, button:active, button:focus {
   margin-bottom: 14px;
   width: 100%;
   overflow: hidden;
+}
+@media (max-width: 999px) {
+  .testimonials-slider__frame {
+    height: calc(var(--card-height) * 3 + var(--row-gap) * 2);
+  }
 }
 .testimonials-slider__slides {
   width: calc(var(--card-width) * 5 + var(--column-gap) * 4);
@@ -2321,32 +2363,76 @@ button, button:active, button:focus {
 .footer {
   background: #111115;
   padding-top: 41px;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
 }
-.footer__container1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 36px;
+@media (max-width: 860px) {
+  .footer {
+    padding-top: 12px;
+  }
 }
-.footer__container2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+@media (max-width: 639px) {
+  .footer {
+    padding-top: 17px;
+    padding-bottom: 21px;
+  }
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto 161px;
+  grid-row-gap: 34px;
+  grid-template-areas: "logo . . form" "donate-button . . ." "social menu menu designed";
+}
+@media (max-width: 1260px) {
+  .footer__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-row-gap: 35px;
+    grid-template-areas: "logo .  form form" "donate-button donate-button .  ." "social menu menu designed";
+  }
+}
+@media (max-width: 860px) {
+  .footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 85px auto 109px;
+    grid-row-gap: 0;
+    grid-template-areas: "logo social" "donate-button social" "menu designed";
+  }
+}
+@media (max-width: 639px) {
+  .footer__container {
+    width: 320px;
+    padding-left: 11px;
+    padding-right: 11px;
+    grid-row-gap: 29px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "logo" "social" "donate-button" "designed" "menu";
+    justify-items: center;
+  }
 }
 .footer__logo {
-  display: inline-block;
+  grid-area: logo;
 }
 .footer__form {
+  grid-area: form;
   color: #fff;
   margin-left: auto;
   display: inline-block;
+}
+@media (max-width: 1260px) {
+  .footer__form {
+    margin-left: 0;
+    margin-right: -87px;
+    justify-self: center;
+  }
+}
+@media (max-width: 860px) {
+  .footer__form {
+    display: none;
+  }
 }
 .footer__form-title {
   margin: 0;
@@ -2391,7 +2477,7 @@ button, button:active, button:focus {
   border: 1px solid #4B9200;
 }
 .footer__donate-button {
-  margin-bottom: 45px;
+  grid-area: donate-button;
   display: block;
 }
 .footer__donate-button:hover {
@@ -2400,18 +2486,67 @@ button, button:active, button:focus {
 .footer__donate-button:active {
   background: #4B9200;
 }
+.footer__social {
+  grid-area: social;
+  align-self: end;
+  margin-bottom: 16px;
+}
+@media (max-width: 860px) {
+  .footer__social {
+    margin: 0;
+    justify-self: end;
+  }
+}
+@media (max-width: 639px) {
+  .footer__social {
+    justify-self: center;
+  }
+}
 .footer__menu {
-  margin-left: 113px;
+  grid-area: menu;
+  justify-self: end;
+  align-self: end;
+  height: var(--menu-height);
+}
+@media (max-width: 1260px) {
+  .footer__menu {
+    margin-right: 34px;
+  }
+}
+@media (max-width: 860px) {
+  .footer__menu {
+    margin-right: 0;
+    justify-self: start;
+  }
+}
+@media (max-width: 639px) {
+  .footer__menu {
+    justify-self: center;
+  }
 }
 .footer__designed {
-  margin-left: 10px;
+  grid-area: designed;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 9px;
   font-weight: 100;
   font-size: 16px;
   line-height: 200%;
   color: #FFFFFF;
   text-decoration: none;
-  padding-bottom: 8px;
   letter-spacing: -0.3px;
+}
+@media (max-width: 1260px) {
+  .footer__designed {
+    margin-right: 4px;
+  }
+}
+@media (max-width: 639px) {
+  .footer__designed {
+    margin: 0;
+    font-size: 15px;
+    line-height: 175%;
+  }
 }
 .footer__designed:hover {
   text-decoration: underline;
@@ -2425,7 +2560,31 @@ button, button:active, button:focus {
 
 .social {
   width: 120px;
-  padding-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+@media (max-width: 860px) {
+  .social {
+    width: auto;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 639px) {
+  .social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 .social__link {
   display: -webkit-box;
@@ -2441,13 +2600,14 @@ button, button:active, button:focus {
   color: #FFFFFF;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  margin-bottom: 10px;
+}
+@media (max-width: 639px) {
+  .social__link {
+    margin: 0;
+  }
 }
 .social__link:visited {
   color: #fff;
-}
-.social__link:last-child {
-  margin: 0;
 }
 .social__link:nth-child(1) .social__icon {
   background: rgba(196, 196, 196, 0.5) url("../assets/images/footer/facebook.svg") no-repeat center center;
@@ -2483,4 +2643,9 @@ button, button:active, button:focus {
 .social__name {
   font-weight: 400;
   font-size: 16px;
+}
+@media (max-width: 860px) {
+  .social__name {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

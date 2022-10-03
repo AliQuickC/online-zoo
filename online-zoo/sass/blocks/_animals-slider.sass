@@ -16,13 +16,13 @@
 		// border: 1px solid red
 		@media(max-width: 639px)
 			width: var(--card-width)
+			height: calc(var(--card-height) * 4 + var(--row-gap) * 3)
 	&__cards
 		width: calc(var(--card-width) * 4 + var(--column-gap) * 3)
 		display: flex
 		flex-wrap: wrap
 		gap: var(--row-gap) var(--column-gap)
 		@media(max-width: 639px)
-			row-gap: 20px
 			width: var(--card-width)
 		// @media(max-width: 1500px)
 		// 	gap: 92px 29px

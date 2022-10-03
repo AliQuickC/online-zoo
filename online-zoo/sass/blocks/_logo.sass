@@ -10,6 +10,8 @@
 	border-radius: 2px
 	cursor: pointer
 	transition:  color 0.6s, border 0.6s
+
+.logo_header
 	@media(max-width: 860px)
 		border: 2px solid transparent
 		width: 50px
@@ -17,7 +19,13 @@
 		font-size: 12px
 		line-height: 120%
 
-.logo:after
+.logo_footer
+	@media(max-width: 639px)
+		width: auto
+		height: auto
+		border: 2px solid transparent
+
+.logo::after
 	position: absolute
 	left: 8px
 	bottom: 5px
@@ -29,6 +37,11 @@
 	-webkit-mask-repeat: no-repeat
 	-webkit-mask-size: contain
 	transition: background-color 0.6s
+.logo_footer::after
+	@media(max-width: 639px)
+		left: 71px
+
+.logo_header::after
 	@media(max-width: 860px)
 		width: 6px
 		height: 13px
@@ -42,9 +55,10 @@
 	color: #E47209
 	border: 2px solid #E47209
 	transition: color 0.3s, border 0.3s
-	@media(max-width: 860px)
-		border: 2px solid transparent
 	&:after
 		background-color: #E47209
 		transition: background-color 0.3s
 
+.logo_header:hover
+	@media(max-width: 860px)
+		border: 2px solid transparent
