@@ -37,9 +37,7 @@
 	-webkit-mask-repeat: no-repeat
 	-webkit-mask-size: contain
 	transition: background-color 0.6s
-.logo_footer::after
-	@media(max-width: 639px)
-		left: 71px
+
 
 .logo_header::after
 	@media(max-width: 860px)
@@ -59,6 +57,18 @@
 		background-color: #E47209
 		transition: background-color 0.3s
 
+
 .logo_header:hover
 	@media(max-width: 860px)
 		border: 2px solid transparent
+
+.logo_footer:hover
+	@media(max-width: 639px)
+		color: #fff
+		border: 2px solid transparent
+	&:after
+		@media(max-width: 639px)
+			background-color: #fff
+.logo_footer::after
+	@media(max-width: 639px)
+		left: 71px

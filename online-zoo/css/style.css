@@ -465,12 +465,6 @@ button, button:active, button:focus {
   transition: background-color 0.6s;
 }
 
-@media (max-width: 639px) {
-  .logo_footer::after {
-    left: 71px;
-  }
-}
-
 @media (max-width: 860px) {
   .logo_header::after {
     width: 6px;
@@ -499,6 +493,24 @@ button, button:active, button:focus {
 @media (max-width: 860px) {
   .logo_header:hover {
     border: 2px solid transparent;
+  }
+}
+
+@media (max-width: 639px) {
+  .logo_footer:hover {
+    color: #fff;
+    border: 2px solid transparent;
+  }
+}
+@media (max-width: 639px) {
+  .logo_footer:hover:after {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 639px) {
+  .logo_footer::after {
+    left: 71px;
   }
 }
 
