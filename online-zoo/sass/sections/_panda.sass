@@ -1,4 +1,16 @@
 .panda
 	height: 385px
-	background: url("../assets/images/giant-panda-bg.jpg") no-repeat center center
+	background: url("../assets/images/panda-bg-big.jpg") no-repeat center center
 	background-size: cover
+	@media(max-width: 1260px)
+		height: 390px
+		background: url("../assets/images/panda-bg-big.jpg") no-repeat center center
+		background-size: cover
+	@media(max-width: 999px)
+		height: 369px
+		background: url("../assets/images/panda_bg-small.jpg") no-repeat center center
+		background-size: cover
+	@media(max-width: 639px)
+		height: 221px
+		background: url("../assets/images/panda_bg-very-small.jpg") no-repeat center center
+		background-size: cover
