@@ -2849,7 +2849,7 @@ button, button:active, button:focus {
 }
 @media (max-width: 1260px) {
   .footer__menu {
-    margin-right: 34px;
+    margin-right: 31px;
   }
 }
 @media (max-width: 860px) {
@@ -2861,6 +2861,12 @@ button, button:active, button:focus {
 @media (max-width: 639px) {
   .footer__menu {
     justify-self: center;
+  }
+}
+@media (max-width: 1260px) {
+  .footer__menu-donate {
+    margin-right: 15px;
+    margin-bottom: 2px;
   }
 }
 .footer__designed {
