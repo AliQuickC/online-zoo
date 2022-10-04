@@ -1,3 +1,5 @@
+import "../sass/style.sass";
+
 const menuBtn = document.querySelector(".burger-button-type1");
 
 menuBtn.addEventListener("click", (e) => {
