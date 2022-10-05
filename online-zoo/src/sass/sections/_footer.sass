@@ -6,7 +6,10 @@
 		padding-top: 12px
 	@media(max-width: 639px)
 		padding-top: 17px
-		padding-bottom: 21px
+		padding-bottom: 17px
+	&_donate
+		@media(max-width: 639px)
+			padding-bottom: 18px
 	&__container
 		display: grid
 		grid-template-columns: auto auto auto auto
@@ -29,9 +32,9 @@
 			width: 320px
 			padding-left: 11px
 			padding-right: 11px
-			grid-row-gap: 29px
+			grid-row-gap: 28px
 			grid-template-columns: auto
-			grid-template-rows: auto auto auto auto
+			grid-template-rows: auto auto auto auto 20px
 			grid-template-areas: "logo" "social" "donate-button" "designed" "menu"
 			justify-items: center
 	&__logo
@@ -117,11 +120,15 @@
 			margin-right: 0
 			justify-self: start
 		@media(max-width: 639px)
+			margin-top: -2px
 			justify-self: center
+			align-self: start
 	&__menu-donate
 		@media(max-width: 1260px)
 			margin-right: 15px
 			margin-bottom: 2px
+		@media(max-width: 639px)
+			margin-right: 2px
 	&__designed
 		grid-area: designed
 		justify-self: end
@@ -137,8 +144,9 @@
 			margin-right: 4px
 		@media(max-width: 639px)
 			margin: 0
+			margin-right: 2px
 			font-size: 15px
-			line-height: 175%
+			line-height: 196%
 		&:hover
 			text-decoration: underline
 			text-decoration-color: #E47209
