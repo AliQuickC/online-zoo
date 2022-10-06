@@ -1,4 +1,4 @@
-(function () {
+export default function () {
 	const poupupDialog = document.querySelector("#testimonials-popup");
 	const slides = document.querySelector(".testimonials-slider__slides");
 
@@ -34,4 +34,4 @@
 		poupupDialog.classList.add("testimonials-popup_open");
 		document.body.classList.add("scroll-block");
 	}
-}());
+};

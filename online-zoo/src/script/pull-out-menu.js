@@ -1,4 +1,4 @@
-(function () {
+export default function() {
 	const menuBtn = document.querySelector(".burger-button-type1");
 	const headerDialog = document.querySelector("#pullout-menu");
 	const pullOutMenu = document.querySelector(".pullout-menu__list");
@@ -41,4 +41,4 @@
 		headerDialog.classList.add("pullout-menu_open");
 		menuBtn.disabled === ""
 	}
-}());
+};
