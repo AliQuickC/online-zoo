@@ -250,7 +250,7 @@
 
 					<div class="testimonials-slider__slides">
 
-						<div class="testimonials-slider__card testimonials-card">
+						<div class="testimonials-card testimonials-slider-card testimonials-slider__card">
 							<div class="testimonials-card__container">
 								<div class="testimonials-card__header">
 									<img src="../../assets/images/testimonials/photo1.svg" alt="photo2"
@@ -274,7 +274,7 @@
 							</div>
 						</div>
 
-						<div class="testimonials-slider__card testimonials-card">
+						<div class="testimonials-card testimonials-slider-card testimonials-slider__card">
 							<div class="testimonials-card__container">
 								<div class="testimonials-card__header">
 									<img src="../../assets/images/testimonials/photo2.jpg" alt="photo2"
@@ -301,7 +301,7 @@
 							</div>
 						</div>
 
-						<div class="testimonials-slider__card testimonials-card">
+						<div class="testimonials-card testimonials-slider-card testimonials-slider__card">
 							<div class="testimonials-card__container">
 								<div class="testimonials-card__header">
 									<img src="../../assets/images/testimonials/photo3.jpg" alt="photo2"
@@ -327,7 +327,7 @@
 							</div>
 						</div>
 
-						<div class="testimonials-slider__card testimonials-card">
+						<div class="testimonials-card testimonials-slider-card testimonials-slider__card">
 							<div class="testimonials-card__container">
 								<div class="testimonials-card__header">
 									<img src="../../assets/images/testimonials/photo4.jpg" alt="photo2"
@@ -354,7 +354,7 @@
 							</div>
 						</div>
 
-						<div class="testimonials-slider__card testimonials-card">
+						<div class="testimonials-card testimonials-slider-card testimonials-slider__card">
 							<div class="testimonials-card__container">
 								<div class="testimonials-card__header">
 									<img src="../../assets/images/testimonials/photo1.svg" alt="photo2"
@@ -386,7 +386,16 @@
 
 				<input class="testimonials-slider__progress" type="range" value="0" min="0" max="100" step="1">
 			</div>
+
 			<button class="testimonials__feedback-button">leave feedback</button>
+
+			<dialog class="testimonials__popup testimonials-popup" id="testimonials-popup"  >
+				<div class="testimonials-popup__window">
+					<div class="testimonials-card testimonials-popup-card testimonials-popup__card"></div>
+					<button class="testimonials-popup__close-button"></button>
+				</div>
+			</dialog>
+
 		</div>
 	</section>
 

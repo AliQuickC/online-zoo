@@ -92,6 +92,7 @@
 		display: flex
 		flex-wrap: wrap
 		column-gap: var(--column-gap)
+		z-index: -2
 		@media(max-width: 999px)
 			flex-direction: column
 			width: 100%
@@ -100,6 +101,7 @@
 	&__card
 		margin-left: 2px
 		margin-top: 2px
+		cursor: pointer
 
 	&__progress
 		width: 600px
@@ -134,60 +136,41 @@
 		@media(max-width: 1260px)
 			width: 75px
 
-.testimonials-card
-	position: relative
-	width: calc(var(--card-width) - 4px)
-	height: calc(var(--card-height) - 4px)
-	padding: 14px 15px 19px 15px
-	background: #F1F3F2
-	border-radius: 20px
-	text-align: left
-	@media(max-width: 1260px)
-		padding-top: 10px
-	@media(max-width: 999px)
-		padding-left: 10px
-		padding-bottom: 12px
-	@media(max-width: 639px)
-		padding-top: 8px
-	&::before
-		background: linear-gradient(to left top,rgba(254, 189, 171, 0.74) 10%, rgba(243, 169, 248, 0.66) 30%, rgba(224, 216, 240, 1) 70%, rgba(234, 247, 254, 1) 90%, rgba(234, 247, 254, 1) 100%)
-		content: ""
+
+.testimonials-popup
+	min-width: 320px
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+	font-size: 16px
+	&:modal
+		left: 0%
+		top: 50%
+		transform: translate(-100%, -50%)
+		transition: all 0.7s
+	&.testimonials-popup_open:modal
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: all 0.7s
+	&__close-button
 		position: absolute
-		top: -2px
-		bottom: -2px
-		left: -2px
-		right: -2px
-		border-radius: 20px
-		z-index: -1
-	&__container
-		height: 100%
-		overflow: hidden
+		top: 12px
+		right: 12px
+		width: 16px
+		height: 16px
+		border: none
+		background: transparent url("../assets/images/x_icon.svg") no-repeat
+		background-size: cover
+	&__window
+		width: 100%
+		position: relative
+		padding: 22px 38px 19px 19px
+		background-color: #fff
+		z-index: -2
 
-	&__header
-		margin-bottom: 10px
-		display: flex
-		column-gap: 10px
-		@media(max-width: 1260px)
-			column-gap: 6px
+.testimonials-popup::backdrop
+	background-color: rgba(#4B9200, 0.0)
+	transition: all 0.9s ease-out
 
-	&__header-photo
-		display: block
-		width: 37px
-		height: 37px
-		border-radius: 50%
-
-	&__header-name
-		margin: 2px
-		font-weight: 400
-		font-size: 16px
-	&__header-details
-		margin: 0
-		font-weight: 300
-		font-size: 15px
-		color: #BDBDBD
-	&__text
-		margin: 0
-		font-weight: 300
-		font-size: 15px
-		line-height: 120%
-		color: #767474
+.testimonials-popup.testimonials-popup_open::backdrop
+	background-color: rgba(#4B9200, 0.3)
+	transition: all 0.3s ease-in
