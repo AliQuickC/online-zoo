@@ -4,7 +4,6 @@
 	background: #F1F3F2
 	border-radius: 20px
 	text-align: left
-	// border: 2px solid transparent
 
 	&::before
 		background: linear-gradient(to left top,rgba(254, 189, 171, 0.74) 10%, rgba(243, 169, 248, 0.66) 30%, rgba(224, 216, 240, 1) 70%, rgba(234, 247, 254, 1) 90%, rgba(234, 247, 254, 1) 100%)
@@ -50,15 +49,23 @@
 		line-height: 120%
 		color: #767474
 
-
 .testimonials-popup-card
 	max-width: 263px
 	height: 370px
 	padding-right: 8px
+	padding-bottom: 5px
 	.testimonials-card__text
-		height: 309px
+		height: 290px
 		overflow: auto
-
+		scrollbar-color: transparent transparent // для firefox
+		&::-webkit-scrollbar // ширина полосы прокрутки
+			width: 0px
+		// &::-webkit-scrollbar-thumb // ползунок для полосы прокрутки
+		// 	background-color: rgba(0,0,0,.2)
+		// 	border-radius: 6px
+		// &::-webkit-scrollbar-track // фоновый слот полосы прокрутки
+		// 	background-color: #eee
+		// 	border-radius: 6px
 
 .testimonials-slider-card
 	width: calc(var(--card-width) - 4px)
@@ -70,5 +77,3 @@
 		padding-bottom: 12px
 	@media(max-width: 639px)
 		padding-top: 8px
-
-
