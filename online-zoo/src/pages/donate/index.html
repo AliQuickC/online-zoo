@@ -73,22 +73,19 @@
 				<div class="pickandfeed-donate__progress donate-progress">
 					<p class="donate-progress__title">Amount</p>
 					<div class="donate-progress__range">
-						<span class="donate-progress__point"><span class="donate-progress__amount">$5000</span></span>
-						<span class="donate-progress__point"><span class="donate-progress__amount">$2000</span></span>
-						<span class="donate-progress__point donate-progress__point_active"><span
-								class="donate-progress__amount">$1000</span></span>
-						<span class="donate-progress__point"><span class="donate-progress__amount">$500</span></span>
-						<span class="donate-progress__point"><span class="donate-progress__amount">$250</span></span>
-						<span class="donate-progress__point donate-progress__point_active640"><span
-								class="donate-progress__amount">$100</span></span>
-						<span class="donate-progress__point"><span class="donate-progress__amount">$50</span></span>
-						<span class="donate-progress__point"><span class="donate-progress__amount">$25</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$5000</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$2000</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span	class="donate-progress__amount">$1000</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$500</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$250</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span	class="donate-progress__amount">$100</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$50</span></span>
+						<span class="donate-progress__mark"><span class="donate-progress__point"></span><span class="donate-progress__amount">$25</span></span>
 					</div>
 				</div>
 
 				<div class="pickandfeed-donate__another-amount-container">
-					<input class="pickandfeed-donate__another-amount" type="number" name="amount" min="1" max="9999"
-						placeholder="Another amount" required>
+					<input class="pickandfeed-donate__another-amount" type="number" name="amount" min="1" max="99999" data-maxlength="4" pattern="[0-9]{,4}" placeholder="Another amount" required>
 					<span></span>
 				</div>
 				<div class="pickandfeed-donate__periodicity-container">
