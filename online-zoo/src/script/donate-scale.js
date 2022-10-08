@@ -9,9 +9,6 @@ export default function () {
 	scaleInit();
 	setAmount(initialScaleValue);
 
-	// console.log(window.innerWidth);
-	// console.log(document.documentElement.clientWidth);
-
 	function scaleInit() {
 		markArray.forEach((elem, i) => {
 			elem.dataset.amount = amountArray[i];

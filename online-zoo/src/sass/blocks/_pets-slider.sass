@@ -8,7 +8,9 @@
 	@media(max-width: 639px)
 		width: var(--card-width)
 	&__frame
+		position: relative
 		width: 100%
+		height: calc((var(--card-height) * 2 + var(--row-gap))
 		margin-left: auto
 		margin-right: auto
 		overflow: hidden
@@ -16,12 +18,23 @@
 			width: var(--card-width)
 			height: calc(var(--card-height) * 4 + var(--row-gap) * 3)
 	&__cards
-		width: calc(var(--card-width) * 4 + var(--column-gap) * 3)
+		position: absolute
+		width: calc(var(--card-width) * 3 + var(--column-gap) * 2 + 0px)
 		display: flex
 		flex-wrap: wrap
 		gap: var(--row-gap) var(--column-gap)
+		transition: none
+		// border: 1px solid red //
+		@media(max-width: 999px)
+			width: calc(var(--card-width) * 2 + var(--column-gap) * 1)
 		@media(max-width: 639px)
 			width: var(--card-width)
+	&__cards_left-position
+		transform: translateX(calc(-100% - var(--column-gap)))
+	&__cards_center-position
+		transform: translateX(0)
+	&__cards_right-position
+		transform: translateX(calc(100% + var(--column-gap)))
 
 	&__controls
 		width: 100%
