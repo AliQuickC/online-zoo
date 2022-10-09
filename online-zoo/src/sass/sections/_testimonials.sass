@@ -69,6 +69,7 @@
 	--card-height: 393px
 	--row-gap: 0px
 	--column-gap: 33px
+	--slider-position: 0
 	@media(max-width: 1260px)
 		--card-width: 293px
 		--card-height: 389px
@@ -81,18 +82,22 @@
 	@media(max-width: 639px)
 		width: 100%
 	&__frame
+		position: relative
 		margin-bottom: 14px
 		width: 100%
+		height: var(--card-height)
 		overflow: hidden
 		@media(max-width: 999px)
 			height: calc(var(--card-height) * 3 + var(--row-gap) * 2)
 	&__slides
-		width: calc(var(--card-width) * 5 + var(--column-gap) * 4)
+		position: absolute
+		left: calc((var(--card-width) * var(--slider-position) + (var(--column-gap) - 2px) * var(--slider-position)) * -1)
+		width: calc(var(--card-width) * 12 + var(--column-gap) * 11)
 		height: var(--card-height)
 		display: flex
 		flex-wrap: wrap
 		column-gap: var(--column-gap)
-		z-index: -2
+		transition: left 0.5s
 		@media(max-width: 999px)
 			flex-direction: column
 			width: 100%
@@ -127,14 +132,18 @@
 			z-index: -1
 
 	&__progress::-webkit-slider-thumb
-		width: 115px
+		width: 75px
 		height: 6px
 		border-radius: 5px
 		background: #FE9013
 		-webkit-appearance: none
 		cursor: ew-resize
 		@media(max-width: 1260px)
-			width: 75px
+			width: 49px
+	// &__progress::-webkit-slider-thumb:hover
+	// 	height: 12px
+	&__progress::-webkit-slider-thumb:active
+		height: 12px
 
 
 .testimonials-popup
