@@ -35,7 +35,7 @@ module.exports = {
   entry: './script/index.js', // точка входа
   output: {
     filename: filename('js'), // файл, куда будут собираться все скрипты
-    path: path.resolve(__dirname, 'dist'), // путь по которому будут складываться собранные скрипты
+    path: path.resolve(__dirname, 'build'), // путь по которому будут складываться собранные скрипты
     assetModuleFilename: '[file]',
 		// assetModuleFilename: 'assets/[name]-[hash][ext]',
   },
@@ -98,7 +98,7 @@ module.exports = {
   },
 
 	plugins: [
-    new CleanWebpackPlugin(),  // чистит папку dist, перед новой сборкой
+    new CleanWebpackPlugin(),  // чистит папку build, перед новой сборкой
     // new HTMLWebpackPlugin({
     //   template: "./index.html" // шаблон для генерации html файла
     // }),
@@ -127,12 +127,12 @@ module.exports = {
           noErrorOnMissing: true,
           force: true,
         },
-				{from: path.resolve(__dirname, 'src/index.html'), to: path.resolve(__dirname, 'dist/index.html') }
+				{from: path.resolve(__dirname, 'src/index.html'), to: path.resolve(__dirname, 'build/index.html') }
       ],
     }),
-    // new CopyPlugin({ // копирует необходимые файлы в dist
+    // new CopyPlugin({ // копирует необходимые файлы в build
     //   patterns: [
-    //     {from: path.resolve(__dirname, 'src/favicon.ico'), to: path.resolve(__dirname, 'dist') }
+    //     {from: path.resolve(__dirname, 'src/favicon.ico'), to: path.resolve(__dirname, 'build') }
     //   ]}),
     new MiniCssExtractPlugin({ // выносит css из js в отдельный файл
       filename: filename('css')
